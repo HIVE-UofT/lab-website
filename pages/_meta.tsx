@@ -8,18 +8,24 @@ export default {
       breadcrumb: false,
       timestamp: false,
       pagination: false,
-      layout: 'raw'
+      layout: 'default'
     }
   },
   // pages config
   "index": {
     title: "Home",
     // type: "page"
-    display: 'hidden'
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
   },
   "team": {
     title: "Team",
     // type: "page"
+    theme: {
+      layout: 'full'
+    }
   },
   "position": {
     title: "Open Positions",

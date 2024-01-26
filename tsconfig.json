@@ -34,7 +34,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/_meta.ts"  ],
+, "pages/_meta.tsx"  ],
   "exclude": [
     "node_modules"
   ]

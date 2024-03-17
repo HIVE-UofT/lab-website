@@ -11,6 +11,18 @@ interface Page {
 
 export default () => {
     const teams = getPagesUnderRoute("/team");
+
+    const teamsByCategory = {};
+    teams.forEach(team => {
+        const category = team.frontMatter?.category || '';
+        if (!teamsByCategory[category]) {
+            teamsByCategory[category] = [];
+        }
+        teamsByCategory[category].push(team);
+    });
+    
+    console.log('Teams grouped by category:', teamsByCategory);
+    
     return (
         <section className="py-14">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">

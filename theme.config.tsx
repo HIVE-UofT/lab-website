@@ -7,7 +7,7 @@ const config: DocsThemeConfig = {
   darkMode: true,
   logo: () => {
     return (
-     <img src='img/hive-logo-header.svg'  alt='hive-logo'/>
+     <img src='/img/hive-logo-header.svg'  alt='hive-logo'/>
     )
   },
 

@@ -4,7 +4,10 @@ import { useRouter } from 'next/router'
 import { useConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  darkMode: true,
+  darkMode: false,
+  nextThemes: {
+    defaultTheme: 'light'
+  },
   logo: () => {
     return (
      <img src='/img/hive-logo-header.svg'  alt='hive-logo'/>

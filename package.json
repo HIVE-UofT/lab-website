@@ -17,6 +17,8 @@
   "author": "yumcoder <omid.jn@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@heroicons/react": "^2.1.1",
+    "@radix-ui/react-icons": "^1.3.0",
     "bibtex-parse": "^2.1.0",
     "next": "latest",
     "next-sitemap": "^4.2.3",

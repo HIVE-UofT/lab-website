@@ -88,7 +88,7 @@ export default function SliderControlsInside() {
             slider.destroy()
         }
     }, [])
-    console.log("SLAMA : ", projects)
+
     return (
         <>
             {/*<!-- Component: Slider with controls inside --> */}

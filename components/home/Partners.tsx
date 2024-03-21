@@ -14,7 +14,7 @@ export const InfiniteSlider = () => {
     return (
 
         <div
-            className="relative py-28">
+            className="relative py-4">
             <div className="-mx-4 flex flex-wrap">
 
                 <div className="w-full px-4">

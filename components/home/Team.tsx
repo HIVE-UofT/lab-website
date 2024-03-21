@@ -3,8 +3,8 @@ import React from "react";
 export default function HomePageTeam() {
     return (
         <div className="mb-10">
-            <div style={{ background: "linear-gradient(143.6deg, rgba(192, 132, 252, 0) 21.79%, rgb(241 190 164 / 51%) 16.92%, rgba(204, 171, 238, 0) 86.35%)" }} className="container max-w-screen-xl mx-auto px-4 py-8 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex">
-                <div className="flex flex-col lg:flex-row justify-center items-center py-12 mx-4 md:mx-6 ">
+            <div style={{ background: "linear-gradient(143.6deg, rgba(192, 132, 252, 0) 30.79%, rgb(219 144 155 / 47%) 54.92%, rgba(204, 171, 238, 0) 100.35%)" }} className="container ">
+                <div className="max-w-screen-xl mx-auto px-4 py-8 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex ">
                     <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start">
                         <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-800 text-center lg:text-left">Meet our Team</h1>
                         <p className="text-base leading-normal text-gray-600 mt-4 md:w-8/12 lg:w-11/12 text-center lg:text-left">A good idiom for kids is "It's raining cats and dogs." Kids know what both cats and dogs are from an early age</p>

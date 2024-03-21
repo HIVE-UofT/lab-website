@@ -54,7 +54,7 @@ const SliderInside = (props: {
 
                         {props.collaborators.map((imageLink: string, idx: number) => (
 
-                            <img width="190" height="33" src={imageLink} key={idx}/>
+                            <img width="150" height="23" src={imageLink} key={idx}/>
 
 
                         ))}

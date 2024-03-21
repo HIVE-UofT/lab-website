@@ -1,3 +1,4 @@
+
 import React from "react";
 
 
@@ -46,3 +47,4 @@ export const InfiniteSlider = () => {
         </div>
     );
 };
+

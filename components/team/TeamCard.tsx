@@ -16,53 +16,56 @@ const WrapLink = ({ href, children }: { href?: string, children: ReactNode }) =>
 
 const TeamCard = memo(({ frontMatter, route, idx = 0 }: { route?: string, frontMatter?: FrontMatter, idx?: number }) => {
 
-    const View = (<>
-        <div className="w-full h-60 sm:h-52 md:h-56">
-            <WrapLink href={route}>
-                <img
-                    src={frontMatter?.image}
-                    className="w-full h-full object-cover object-center shadow-md rounded-xl"
-                    alt=""
-                />
-            </WrapLink>
-        </div>
-        <div className="mt-4 flex justify-center items-center flex-col">
-            <WrapLink href={route}>
-                <h2 className="text-xl hover:text-2xl font-semibold">{frontMatter.title}</h2>
-            </WrapLink>
-            <WrapLink href={route}>
-                <p>{frontMatter.role}</p>
-            </WrapLink>
-        </div>
-        <div className="mt-3 flex gap-4 justify-center">
-            {
-                IconBar.map(item => {
-                    const value = frontMatter[item.field]
-                    if (value) {
-                        return (
-                            <Link href={value} target="_blank">
-                                {item.icon}
-                            </Link>
-                        );
+    const View = (
+        <>
+            <div className="flex-none w-24 h-24">
+                <WrapLink href={route}>
+                    <img
+                        src={frontMatter?.image}
+                        className="w-full h-full rounded-full"
+                        alt=""
+                    />
+                </WrapLink>
+            </div>
+            <div >
+                <WrapLink href={route}>
+                    <h2 className="text-xl hover:text-2xl font-semibold">{frontMatter.title}</h2>
+                </WrapLink>
+                <WrapLink href={route}>
+                    <p>{frontMatter.role}</p>
+                </WrapLink>
+
+                <div className={`mt-3 flex gap-3 ${(idx < 1) ? 'justify-center' : ''}`}>
+                    {
+                        IconBar.map(item => {
+                            const value = frontMatter[item.field]
+                            if (value) {
+                                return (
+                                    <Link href={value} target="_blank">
+                                        {item.icon}
+                                    </Link>
+                                );
+                            }
+                            return null;
+                        })
                     }
-                    return null;
-                })
-            }
-        </div>
-    </>);
+                </div>
+            </div>
+        </>
+    );
 
     if (idx < 1) {
         // in team member page 
         return (
             <center>
-                <div className="w-1/2 md:w-1/4">
+                <div className="w-full">
                     {View}
                 </div>
             </center>
         );
     }
     return (
-        <li key={idx}>
+        <li key={idx} className="flex gap-4 items-center mt-8">
             {View}
         </li>
     );

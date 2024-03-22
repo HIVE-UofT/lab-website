@@ -20,20 +20,11 @@ export default {
       layout: 'raw'
     }
   },
-  // "member": {
-  //   title: "member",
-  //   // type: "page"
-  //   display: 'hidden',
-  //   theme: {
-  //     // breadcrumb: true,
-  //     layout: 'default'
-  //   }
-  // },
   "team": {
     title: "Team",
     type: "page",
     theme: {
-      layout: 'full'
+      layout: 'default'
     }
   },
   "position": {

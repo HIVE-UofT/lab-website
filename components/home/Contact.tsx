@@ -1,4 +1,24 @@
+<<<<<<< HEAD
 export default () => {
+=======
+/*
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+*/
+import { useState } from 'react'
+// import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { Switch } from '@headlessui/react'
+>>>>>>> 8539519 (improve team UI)
 
     const contactMethods = [
         {
@@ -52,11 +72,27 @@ export default () => {
                                 <label className="font-medium">
                                     Full name
                                 </label>
+<<<<<<< HEAD
                                 <input
                                     type="text"
                                     required
                                     className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                                 />
+=======
+                                <select
+                                    id="country"
+                                    name="country"
+                                    className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                                >
+                                    <option>US</option>
+                                    <option>CA</option>
+                                    <option>EU</option>
+                                </select>
+                                {/* <ChevronDownIcon
+                                    className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
+                                    aria-hidden="true"
+                                /> */}
+>>>>>>> 8539519 (improve team UI)
                             </div>
                             <div>
                                 <label className="font-medium">
@@ -82,6 +118,24 @@ export default () => {
                             </button>
                         </form>
                     </div>
+<<<<<<< HEAD
+=======
+                    <div className="sm:col-span-2">
+                        <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+                            Message
+                        </label>
+                        <div className="mt-2.5">
+                            <textarea
+                                name="message"
+                                id="message"
+                                rows={4}
+                                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                defaultValue={''}
+                            />
+                        </div>
+                    </div>
+
+>>>>>>> 8539519 (improve team UI)
                 </div>
             </div>
         </main>

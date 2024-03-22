@@ -13,6 +13,7 @@ const SliderInside = (props: {
     collaborators?: string[]
 }) => {
     return (
+<<<<<<< HEAD
 
         <section className="py-16">
             <div
@@ -163,5 +164,20 @@ export default function SliderControlsInside() {
             </div>
             {/*<!-- End Slider with controls inside --> */}
         </>
+=======
+        <section>
+            <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 overflow-hidden md:px-8 md:flex">
+                <div className='flex-none space-y-5 max-w-xl'>
+                    <p>
+                        The Health Informatics, Visualization, and Equity (HIVE) Lab in the Institute of Health Policy, Management and Evaluation, Dalla Lana School of Public Health at the University of Toronto is a group of data scientists, epidemiologists, and software developers working at the interface of Machine Learning, AI, Information Visualization, and Health Informatics.
+                    </p>
+                </div>
+                <div className='flex-1 hidden md:block'>
+                    {/* Replace with your image */}
+                    <img src="img/homepage-aboutus-right.png" className="max-w-xl" />
+                </div>
+            </div>
+        </section>
+>>>>>>> 8539519 (improve team UI)
     )
 }

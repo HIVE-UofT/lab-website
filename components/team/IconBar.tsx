@@ -58,5 +58,5 @@ export default [
             </svg>,
         field: 'orcid'
     },
-
 ];
+

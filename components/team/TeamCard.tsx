@@ -4,6 +4,7 @@ import { memo } from "react";
 import IconBar from './IconBar';
 import { FrontMatter } from './type';
 import { ReactNode } from 'react';
+import ReactMarkdown from 'react-markdown'; // Import ReactMarkdown
 
 const WrapLink = ({ href, children }: { href?: string, children: ReactNode }) => {
     if (href) {
@@ -16,17 +17,22 @@ const WrapLink = ({ href, children }: { href?: string, children: ReactNode }) =>
 
 const TeamCard = memo(({ frontMatter, route, idx = 0 }: { route?: string, frontMatter?: FrontMatter, idx?: number }) => {
 
+    const { range, current_position } = frontMatter;
+
     const View = (
         <>
-            <div className="flex-none w-24 h-24">
-                <WrapLink href={route}>
-                    <img
-                        src={frontMatter?.image}
-                        className="w-full h-full rounded-full"
-                        alt=""
-                    />
-                </WrapLink>
-            </div>
+            {(idx > 0 && !range) && (
+                <div className="flex-none w-24 h-24">
+                    <WrapLink href={route}>
+                        <img
+                            src={frontMatter?.image}
+                            className="w-full h-full rounded-full"
+                            alt=""
+                        />
+                    </WrapLink>
+                </div>
+            )}
+
             <div >
                 <WrapLink href={route}>
                     <h2 className="text-xl hover:text-2xl font-semibold">{frontMatter.title}</h2>
@@ -34,6 +40,10 @@ const TeamCard = memo(({ frontMatter, route, idx = 0 }: { route?: string, frontM
                 <WrapLink href={route}>
                     <p>{frontMatter.role}</p>
                 </WrapLink>
+                {range && (
+                    <ReactMarkdown>{`${range}, ${current_position}`}</ReactMarkdown>
+                )}
+
 
                 <div className={`mt-3 flex gap-3 ${(idx < 1) ? 'justify-center' : ''}`}>
                     {

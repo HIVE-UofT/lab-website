@@ -12,6 +12,8 @@ export interface FrontMatter {
     linkedin?: string;
     scholar_google?: string;
     orcid?: string;
+    range?: string;
+    current_position?: string;
 }
 
 export interface Page {

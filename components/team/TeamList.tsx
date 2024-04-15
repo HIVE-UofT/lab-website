@@ -5,27 +5,51 @@ import TeamCard from './TeamCard';
 
 export default memo(() => {
     const backgroundImageRef = useRef(null);
-    const [teams, setTeams] = useState<Page[]>([]);
+    const [teams, setTeams] = useState<{ [key: string]: Page[] }>({});
 
     useEffect(() => {
         const teams = getPagesUnderRoute("/team");
-        // console.log('teams', teams)
-        // const members = [];
-        // // teams.forEach((team: Page) => {
-        // //     const category = team.frontMatter?.category || '';
-        // //     if (!teamsByCategoryMap[category]) {
-        // //         teamsByCategoryMap[category] = [];
-        // //     }
-        // //     teamsByCategoryMap[category].push(team);
-        // // });
+        const teamsByCategoryMap = {};
 
-        // // Sort teams by date within each category
-        // for (const member in teams) {
-        //     members[category].sort((a, b) => new Date(b.frontMatter.date).getTime() - new Date(a.frontMatter.date).getTime());
-        // }
+        teams.forEach((member) => {
+            const category = member.frontMatter?.category || '';
+            const key = category.split('_') || [];
+            // prevent runtime err
+            if (key.length < 2) { // 0, 1
+                if (key.length < 1) { // 0
+                    key[0] = '-';
+                } else { // 1
+                    key[1] = 0;
+                }
+            }
+            const categoryKey = key[0]; // Extracting the category key (C1, C2, etc.)
+            const categoryValue = key[1]; // Extracting the category value (10, 20, etc.)
 
-        // console.log(teamsByCategoryMap)
-        setTeams(teams);
+            if (!teamsByCategoryMap[categoryKey]) {
+                teamsByCategoryMap[categoryKey] = [];
+            }
+
+            teamsByCategoryMap[categoryKey].push({
+                member,
+                value: parseInt(categoryValue) // Converting the category value to integer for sorting
+            });
+        });
+
+        // Sort teams by value within each category
+        for (const category in teamsByCategoryMap) {
+            teamsByCategoryMap[category].sort((a, b) => {
+                if (a.value !== b.value) {
+                    return a.value - b.value; // Sort by value if they are different
+                } else {
+                    // If values are same, sort by frontMatter.date
+                    return new Date(b.member?.frontMatter?.date).getTime() - new Date(a.member?.frontMatter?.date).getTime();
+                }
+            });
+            teamsByCategoryMap[category] = teamsByCategoryMap[category].map(item => item.member); // Removing the 'value' property
+
+        }
+        console.log(teamsByCategoryMap)
+        setTeams(teamsByCategoryMap);
 
         // TODO: Temp trick until update will publish in the Nextra
         const parent = backgroundImageRef.current?.parentElement?.parentElement?.parentElement;
@@ -62,13 +86,23 @@ export default memo(() => {
                 </div>
 
                 <div className="mt-8">
-                    <div className="mt-8">
-                        <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-                            {teams?.map((page: Page, idx: number) => (
-                                <TeamCard frontMatter={page?.frontMatter} route={page?.route} idx={idx + 1} />
-                            ))}
-                        </ul>
-                    </div>
+                    {Object.keys(teams).sort().map((category, index) => (
+                        <div key={category}>
+                            {(index > 0) && (
+                                <>
+                                    <h3 className="text-2xl mt-4 font-semibold">
+                                        {index == 1 ? "Trainees" : "Alumni"}
+                                    </h3>
+                                    <hr />
+                                </>
+                            )}
+                            <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+                                {teams[category].map((page: Page, idx: number) => (
+                                    <TeamCard key={idx} frontMatter={page?.frontMatter} route={page?.route} idx={idx + 1} />
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

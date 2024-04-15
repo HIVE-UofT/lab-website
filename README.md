@@ -1,16 +1,6 @@
-# Nextra Docs Template 
+# Hive Lab @UofT Web Site
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
-
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
-
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
-
-## Quick Start
-
-Click the button to clone this repository and deploy it on Vercel:
-
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+The Health Informatics, Visualization, and Equity (HIVE) Lab in the Institute of Health Policy, Management and Evaluation, Dalla Lana School of Public Health at the University of Toronto.
 
 ## Local Development
 
@@ -18,6 +8,21 @@ First, run `pnpm i` to install the dependencies.
 
 Then, run `pnpm dev` to start the development server and visit localhost:3000.
 
+## TODO
+
+- [ ] Edit Sitemap address
+- [ ] Complete theme.config
+- [ ] Add SEO tags
+- [ ] Mobile friendly icons
+- [ ] Dark mode support
+
 ## License
 
 This project is licensed under the MIT License.
+
+## Tools
+
+Developed using open-source tools:
+
+- [X] https://nextra.site/
+- [X] https://floatui.com/components/modals

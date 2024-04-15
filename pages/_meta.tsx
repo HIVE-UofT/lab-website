@@ -33,6 +33,13 @@ export default {
   },
   "research": {
     title: "Researchs",
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "news": {
+    title: "Researchs",
+    display: 'hidden',
     // type: "page"
   },
   "publication": {

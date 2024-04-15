@@ -9,7 +9,7 @@ export default memo(() => {
 
     useEffect(() => {
         const teams = getPagesUnderRoute("/team");
-        console.log('teams', teams)
+        // console.log('teams', teams)
         // const members = [];
         // // teams.forEach((team: Page) => {
         // //     const category = team.frontMatter?.category || '';

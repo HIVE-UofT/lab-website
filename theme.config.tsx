@@ -3,7 +3,6 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
 import { useConfig } from 'nextra-theme-docs'
 import Team from './components/team/Team'
-import Project from './components/projects/Single'
 
 const config: DocsThemeConfig = {
   darkMode: false,
@@ -157,10 +156,6 @@ const config: DocsThemeConfig = {
         <Team>
           {children}
         </Team>
-      );
-    } else if (router.asPath.startsWith("/projects/")) {
-      View = (
-          <Project>         {children} </Project>
       );
     }
 

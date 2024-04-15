@@ -1,183 +1,393 @@
-import React, {useEffect, useState} from "react"
+import React, { useEffect, useState } from "react"
 import Glide from "@glidejs/glide"
-import {getPagesUnderRoute} from "nextra/context";
+import { getPagesUnderRoute } from "nextra/context";
 import MDXContent from "*.mdx";
-import {getStaticPaths} from "next/dist/build/templates/pages";
+import { getStaticPaths } from "next/dist/build/templates/pages";
 
-
-const SliderInside = (props: {
-    name: string,
-    description?: string,
-    link?: string,
-    image: string,
-    collaborators?: string[]
-}) => {
-    return (
-<<<<<<< HEAD
-
-        <section className="py-16">
-            <div
-                className="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
-                <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
-                    {/*<h1 className="text-sm text-indigo-600 font-medium">*/}
-
-                    {/*</h1>*/}
-                    <h2 className="text-4xl text-gray-800 font-extrabold md:text-5xl">
-                        {props.name}                    </h2>
-                    <p className="line-clamp-5">
-                        {props.description}
-                    </p>
-                    <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
-                        <a href={props.link}
-                           className="flex items-center justify-center gap-x-2 py-2 px-4 text-gray-700 hover:text-gray-500 font-medium duration-150 active:bg-gray-100 border rounded-lg md:inline-flex">
-                            Get access
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                 fill="currentColor" className="w-5 h-5">
-                                <path fillRule="evenodd"
-                                      d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"
-                                      clipRule="evenodd"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div className="flex-none mt-14 md:mt-0 md:max-w-xl">
-                    <img
-                        src={props.image}
-                        className=" max-h-96 md:rounded-tl-[108px]"
-                        alt=""
-                    />
-                </div>
-            </div>
-            {
-                props.collaborators && (<div className="mt-14 px-4 md:px-8">
-                    <p className="text-center text-sm text-gray-700 font-semibold">Collaborators</p>
-                    <div className="flex justify-center items-center flex-wrap gap-x-12 gap-y-6 mt-6">
-
-                        {props.collaborators.map((imageLink: string, idx: number) => (
-
-                            <img width="150" height="23" src={imageLink} key={idx}/>
-
-
-                        ))}
-
-                    </div>
-                </div>)
-            }
-
-        </section>
-    )
-}
+const Logo = (props) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={232.85}
+        height={264.02}
+        data-name="Layer 1"
+        {...props}
+    >
+        <defs>
+            <style>
+                {".cls-15{fill:#fff}.cls-17{fill:#b19bc0}.cls-19{fill:#222359}"}
+            </style>
+        </defs>
+        <g
+            style={{
+                clipPath: "url(#clippath)",
+                fill: "none",
+            }}
+        >
+            <path
+                d="M362.93 541.02v-97.03c0-8.25-4.29-15.84-11.55-19.8l-83.5-48.18c-6.93-3.96-15.84-3.96-22.77 0l-84.16 48.18c-6.93 3.96-11.55 11.55-11.55 19.8v96.7c0 8.25 4.29 15.84 11.55 19.8l83.83 48.52c6.93 3.96 15.84 3.96 22.77 0l83.83-48.52c7.26-3.96 11.55-11.55 11.55-19.47z"
+                style={{
+                    fill: "#233851",
+                }}
+                transform="translate(-137.88 -360.94)"
+            />
+        </g>
+        <path
+            d="M85.68 54.73c5.94 0 10.76-4.82 10.76-10.76s-4.82-10.76-10.76-10.76-10.76 4.82-10.76 10.76 4.82 10.76 10.76 10.76zm0-18.68c4.38 0 7.92 3.55 7.92 7.92s-3.55 7.92-7.92 7.92-7.92-3.55-7.92-7.92 3.55-7.92 7.92-7.92zM54.33 160.71c-.36 1.06-.76 2.1-1.18 3.14-.41 1.04 1.15 1.69 1.58.64.43-1.07.84-2.15 1.22-3.24.36-1.06-1.25-1.62-1.61-.55zM130.62 110.26c-3.71 0-6.71 3.01-6.71 6.71 0 2.72 1.63 5.15 4.13 6.2-4.12 10.77-13.13 19.06-24.22 22.23-.47-5.56-5.14-9.85-10.72-9.85-5.94 0-10.76 4.82-10.76 10.76 0 1.12.17 2.21.49 3.22-25.76 14.34-30.35 49.43-8.74 70.12a38.244 38.244 0 0 1-11.05 9.2c.59.27 1.08.65 1.48 1.09 4.18-2.42 7.84-5.52 10.82-9.14 3.6 3.19 7.73 5.82 12.26 7.69a10.71 10.71 0 0 0-.65 3.68c0 5.94 4.82 10.76 10.76 10.76s10.76-4.82 10.76-10.76-4.82-10.76-10.76-10.76c-3.92 0-7.51 2.12-9.41 5.53-4.4-1.81-8.42-4.36-11.91-7.48a40.1 40.1 0 0 0 7.76-29.64 6.708 6.708 0 0 0 4.48-6.33c0-1.98-.86-3.84-2.37-5.12 11.48-10.87 30.78-5.2 34.22 10.51a6.711 6.711 0 0 0 1.11 13.33 6.708 6.708 0 0 0 .61-13.39c-3.56-17.38-24.98-23.61-37.41-11.39a6.711 6.711 0 0 0-9.59 6.06c0 3.7 3.01 6.71 6.71 6.71.19 0 .38 0 .57-.02a38.423 38.423 0 0 1-7.35 28.12c-20.58-19.87-16.24-53.35 8.33-67.19 1.82 3.64 5.54 5.95 9.63 5.95 5.61 0 10.29-4.32 10.73-9.91 11.87-3.24 21.52-12.04 25.86-23.55.31.04.62.07.94.07 3.71 0 6.71-3.01 6.71-6.71s-3.01-6.71-6.71-6.71zM97.71 224.27c4.37 0 7.92 3.55 7.92 7.92s-3.55 7.92-7.92 7.92-7.92-3.55-7.92-7.92 3.55-7.92 7.92-7.92zm27.76-28.74c0 2.14-1.73 3.87-3.87 3.87s-3.87-1.73-3.87-3.87 1.73-3.87 3.87-3.87 3.87 1.73 3.87 3.87zm-43.55-8.14c-2.14 0-3.87-1.73-3.87-3.87s1.73-3.87 3.87-3.87 3.87 1.73 3.87 3.87-1.73 3.87-3.87 3.87zm11.17-33.14c-4.37 0-7.92-3.55-7.92-7.92s3.55-7.92 7.92-7.92 7.92 3.55 7.92 7.92-3.55 7.92-7.92 7.92zm37.52-33.4c-2.14 0-3.87-1.73-3.87-3.87s1.73-3.87 3.87-3.87 3.87 1.73 3.87 3.87-1.73 3.87-3.87 3.87zM-115.33 114.9c3.71 0 6.71-3.01 6.71-6.71 0-3.19-2.26-5.95-5.38-6.58 1.34-6.57 5.03-11.73 9.87-15.12.06-.72.13-1.45.19-2.17-5.8 3.62-10.27 9.51-11.77 17.18-3.55.19-6.34 3.14-6.34 6.7s3.01 6.71 6.71 6.71zm0-10.58c2.14 0 3.87 1.73 3.87 3.87s-1.73 3.87-3.87 3.87-3.87-1.73-3.87-3.87 1.73-3.87 3.87-3.87zM-109.67 143.12l.21-1.87a39.07 39.07 0 0 0-10.57 5.75 10.698 10.698 0 0 0-7.09-2.66c-5.94 0-10.76 4.82-10.76 10.76s4.82 10.76 10.76 10.76 10.76-4.82 10.76-10.76c0-2.61-.93-5.01-2.48-6.87 2.82-2.14 5.9-3.85 9.16-5.1zm-17.44 19.9c-4.37 0-7.92-3.55-7.92-7.92s3.55-7.92 7.92-7.92c2.19 0 4.17.89 5.6 2.32s2.32 3.41 2.32 5.6c0 4.37-3.55 7.92-7.92 7.92zM58.85 147.76c.11-1.15.18-2.29.23-3.45.03-1.11-1.67-1.19-1.7-.05a75.31 75.31 0 0 1-.22 3.35c-.09 1.13 1.6 1.25 1.7.15zM57.08 135.87c.12 1.12.2 2.23.26 3.35.06 1.13 1.76 1.02 1.7-.09-.06-1.16-.15-2.29-.27-3.45-.13-1.13-1.81-.92-1.69.18zM55.57 127.61c.28 1.08.53 2.17.75 3.27.22 1.12 1.89.75 1.67-.33a63.29 63.29 0 0 0-.77-3.37c-.28-1.07-1.93-.67-1.65.44zM54.43 119c-.46-1.04-2-.34-1.57.67.44 1.04.84 2.07 1.22 3.13.38 1.04 1.98.5 1.6-.58-.39-1.09-.81-2.15-1.26-3.22zM50.48 111.32c-.6-.97-2.03-.05-1.45.89.58.96 1.13 1.92 1.67 2.92.53.99 2.03.19 1.5-.8-.55-1.02-1.11-2.02-1.72-3zM20.31 86.55c-1.09-.39-2.18-.76-3.28-1.09-.71-.21-1.32.51-1.01 1.18.11.22.29.38.53.45 1.07.32 2.13.68 3.18 1.06s1.64-1.21.59-1.6zM57.4 156.28c.27-1.13.51-2.24.73-3.38.19-1.09-1.48-1.41-1.68-.3-.21 1.11-.44 2.19-.71 3.28-.27 1.1 1.39 1.48 1.66.4zM28.18 90.11a59.55 59.55 0 0 0-3.09-1.56c-1.01-.47-1.75 1.07-.72 1.54 1.02.48 2.01.98 3 1.52.98.53 1.8-.95.81-1.5zM12 84.18c-1.14-.23-2.26-.43-3.41-.6-1.1-.15-1.36 1.52-.24 1.69 1.11.17 2.2.36 3.3.58 1.11.22 1.43-1.44.34-1.67zM25.03 193.79c-1.02.5-.25 2.01.75 1.53 1.04-.51 2.06-1.04 3.07-1.6.98-.56.13-2.03-.84-1.48-.98.55-1.97 1.06-2.98 1.55zM41.27 182.02c-.78.81-1.58 1.58-2.41 2.35s.35 2 1.16 1.25c.85-.78 1.67-1.58 2.47-2.41.77-.8-.44-2-1.23-1.18zM45.45 104.29c-.73-.87-2.02.23-1.31 1.09.72.86 1.4 1.74 2.07 2.64.68.91 2.03-.11 1.37-1.01-.69-.93-1.4-1.83-2.13-2.72zM46.64 175.58c-.66.91-1.33 1.8-2.04 2.67-.71.89.63 1.93 1.33 1.07.73-.9 1.42-1.81 2.1-2.75.66-.93-.75-1.89-1.39-.99zM32.62 92.78c-.95-.62-1.87.8-.94 1.42.94.62 1.84 1.27 2.74 1.94.92.68 1.91-.71 1.02-1.37-.93-.69-1.86-1.36-2.83-2zM32.29 189.59c-.94.65.05 2.03.96 1.41.95-.65 1.88-1.33 2.8-2.03.89-.7-.16-2.02-1.05-1.35-.89.69-1.79 1.34-2.72 1.97zM39.46 98.07c-.86-.76-1.94.54-1.13 1.28.83.75 1.64 1.52 2.43 2.31.82.81 1.97-.43 1.21-1.21-.81-.82-1.65-1.61-2.51-2.38zM17.23 196.89c-1.08.35-.54 1.95.52 1.62 1.1-.35 2.19-.73 3.27-1.14 1.04-.4.44-2-.62-1.59-1.04.39-2.11.77-3.17 1.1z"
+            className="cls-15"
+        />
+        <path
+            d="M111.15 69.9c-2.49 0-4.77 1.38-5.93 3.57-19.2-6.23-39.64 3.48-47.18 22.04-3.4-.54-6.84.57-9.29 3.01-.82-.92-1.66-1.81-2.53-2.68C34.77 84.39 19.1 77.19 1.74 76.73c.21.95.34 1.9.39 2.85 16.42.56 31.24 7.42 42.08 18.27s18.32 26.96 18.32 44.24-7 32.92-18.32 44.24a62.513 62.513 0 0 1-26.38 15.71c.9.68 1.77 1.41 2.62 2.16 4.77-1.57 9.31-3.66 13.52-6.23.89 2.82.14 5.92-1.95 8.02a7.897 7.897 0 0 1-7.6 2.06c.99 1.02 1.98 2.04 2.98 3.05 2.58-.23 4.9-1.37 6.63-3.1 3.03-3.03 3.98-7.62 2.39-11.59 3.53-2.37 6.81-5.07 9.8-8.07 11.84-11.84 19.16-28.19 19.16-46.25 0-9.18-1.89-17.92-5.31-25.85 4.22-1.56 7.04-5.59 7.04-10.1s-2.99-8.78-7.4-10.23c7.28-17.57 26.66-26.73 44.91-20.86-.12.5-.18 1.02-.18 1.55 0 3.46 2.63 6.36 6.07 6.68-.69 11.19-6 21.54-14.67 28.65a6.71 6.71 0 0 0-5.16-2.41c-3.71 0-6.71 3.01-6.71 6.71s3.01 6.71 6.71 6.71 6.71-3.01 6.71-6.71c0-1.02-.23-1.99-.64-2.86 9.17-7.45 14.77-18.35 15.45-30.15a6.711 6.711 0 0 0-1.06-13.34zm-46.88 36.24c0 3.4-2.16 6.42-5.39 7.51a65.395 65.395 0 0 0-8.28-12.97c4.95-5.2 13.67-1.61 13.67 5.46zm26.42 13.97c-2.14 0-3.87-1.73-3.87-3.87s1.73-3.87 3.87-3.87 3.87 1.73 3.87 3.87-1.73 3.87-3.87 3.87zm20.46-39.63c-2.14 0-3.87-1.73-3.87-3.87s1.73-3.87 3.87-3.87 3.87 1.73 3.87 3.87-1.73 3.87-3.87 3.87z"
+            className="cls-15"
+        />
+        <path
+            d="M51.03 168.43c-.51.99-1.06 1.97-1.63 2.94-.56.96.88 1.84 1.47.87.59-1 1.15-2 1.68-3.03.52-1.01-1.01-1.76-1.52-.78z"
+            className="cls-15"
+        />
+        <path
+            d="M236.1 505.37h-3.03v-3.03c0-.56-.45-1.01-1.01-1.01h-1.01c-.56 0-1.01.45-1.01 1.01v3.03h-3.03c-.56 0-1.01.45-1.01 1.01v1.01c0 .56.45 1.01 1.01 1.01h3.03v3.03c0 .56.45 1.01 1.01 1.01h1.01c.56 0 1.01-.45 1.01-1.01v-3.03h3.03c.56 0 1.01-.45 1.01-1.01v-1.01c0-.56-.45-1.01-1.01-1.01z"
+            className="cls-15"
+            style={{
+                clipPath: "url(#clippath-2)",
+                fill: "none",
+            }}
+            transform="translate(-137.88 -360.94)"
+        />
+        <path
+            d="M194.14 501.71c0-29.34-23.87-53.21-53.21-53.21-.6 0-1.09.49-1.09 1.09v104.24c0 .6.49 1.09 1.09 1.09 29.34 0 53.21-23.87 53.21-53.21z"
+            className="cls-17"
+            style={{
+                clipPath: "url(#clippath-3)",
+                fill: "none",
+            }}
+            transform="translate(-137.88 -360.94)"
+        />
+        <g
+            style={{
+                clipPath: "url(#clippath-4)",
+                fill: "none",
+            }}
+        >
+            <path
+                d="M188.48 496.83c-2.11-24.45-23.73-42.62-48.18-40.51a.91.91 0 0 0-.83.99l7.51 86.86c.04.5.49.88.99.83 24.45-2.11 42.62-23.73 40.51-48.18z"
+                style={{
+                    fill: "#c93d59",
+                }}
+                transform="translate(-137.88 -360.94)"
+            />
+        </g>
+        <path
+            d="M181.04 500.14c-1.61-18.58-18.03-32.4-36.62-30.79-.38.03-.67.37-.63.75l5.71 66.02c.03.38.37.67.75.63 18.58-1.61 32.4-18.03 30.79-36.62z"
+            className="cls-17"
+            style={{
+                clipPath: "url(#clippath-5)",
+                fill: "none",
+            }}
+            transform="translate(-137.88 -360.94)"
+        />
+        <g
+            style={{
+                clipPath: "url(#clippath-6)",
+                fill: "none",
+            }}
+        >
+            <path
+                d="M175.47 503.66c0-15.18-12.35-27.53-27.53-27.53a.57.57 0 0 0-.57.57v53.93c0 .31.25.57.57.57 15.18 0 27.53-12.35 27.53-27.53z"
+                style={{
+                    fill: "#eb8b8e",
+                }}
+                transform="translate(-137.88 -360.94)"
+            />
+        </g>
+        <g
+            style={{
+                clipPath: "url(#clippath-7)",
+                fill: "none",
+            }}
+        >
+            <path
+                d="M167.07 501.04c-.89-10.31-10-17.97-20.31-17.08a.39.39 0 0 0-.35.42l3.17 36.62c.02.21.21.37.42.35 10.31-.89 17.97-10 17.08-20.31z"
+                style={{
+                    fill: "#f0bda4",
+                }}
+                transform="translate(-137.88 -360.94)"
+            />
+        </g>
+        <path
+            d="m355.45 429.25-95.63-55.6c-2.97-1.48-6.67-1.48-9.64 0l-95.63 55.6c-2.97 1.48-4.45 4.45-4.45 8.15v110.45c0 3.71 1.48 6.67 4.45 8.15l95.63 55.6c2.97 1.48 6.67 1.48 9.64 0l95.63-55.6c2.97-1.48 4.45-4.45 4.45-8.15V437.4c0-3.71-1.48-6.67-4.45-8.15zm-92.66-60.05 95.63 54.86c4.45 2.97 7.41 8.15 7.41 13.34v110.45c0 5.19-2.97 10.38-7.41 13.34l-95.63 54.86c-5.19 2.97-10.38 2.97-15.57 0l-95.63-54.86c-4.45-2.97-7.41-8.15-7.41-13.34V437.4c0-5.19 2.97-10.38 7.41-13.34l95.63-54.86c5.19-2.97 10.38-2.97 15.57 0z"
+            className="cls-15"
+            style={{
+                clipPath: "url(#clippath-8)",
+                fill: "none",
+            }}
+            transform="translate(-137.88 -360.94)"
+        />
+        <path
+            d="m359.83 426.36-100.46-58.41c-3.12-1.56-7.01-1.56-10.12 0l-100.46 58.41c-3.12 1.56-4.67 4.67-4.67 8.57v116.04c0 3.89 1.56 7.01 4.67 8.57l100.46 58.41c3.12 1.56 7.01 1.56 10.12 0l100.46-58.41c3.12-1.56 4.67-4.67 4.67-8.57V434.93c0-3.89-1.56-7.01-4.67-8.57zm-97.35-63.08 100.46 57.63c4.67 3.11 7.79 8.57 7.79 14.02v116.04c0 5.45-3.12 10.9-7.79 14.02l-100.46 57.63c-5.45 3.12-10.9 3.12-16.35 0l-100.46-57.63c-4.67-3.12-7.79-8.57-7.79-14.02V434.93c0-5.45 3.12-10.9 7.79-14.02l100.46-57.63c5.45-3.12 10.9-3.12 16.35 0z"
+            className="cls-19"
+            style={{
+                clipPath: "url(#clippath-9)",
+                fill: "none",
+            }}
+            transform="translate(-137.88 -360.94)"
+        />
+        <path
+            d="M155.94 495.56c0-3.36-2.74-6.1-6.1-6.1-.07 0-.13.06-.13.13v11.95c0 .07.06.13.13.13 3.36 0 6.1-2.74 6.1-6.1z"
+            className="cls-19"
+            style={{
+                clipPath: "url(#clippath-10)",
+                fill: "none",
+            }}
+            transform="translate(-137.88 -360.94)"
+        />
+        <path
+            d="M156.05 510.53c0-3.36-2.74-6.1-6.1-6.1-.07 0-.13.06-.13.13v11.95c0 .07.06.13.13.13 3.36 0 6.1-2.74 6.1-6.1z"
+            className="cls-19"
+            style={{
+                clipPath: "url(#clippath-11)",
+                fill: "none",
+            }}
+            transform="translate(-137.88 -360.94)"
+        />
+    </svg>
+)
 
 export default function SliderControlsInside() {
-    const [projects] = useState(getPagesUnderRoute("/projects"))
-    useEffect(() => {
-        const slider = new Glide(".glide-01", {
-            type: "slider",
-            focusAt: "center",
-            perView: 1,
-            autoplay: 3000,
-            animationDuration: 700,
-            gap: 0,
-            classes: {
-                nav: {
-                    active: "[&>*]:bg-wuiSlate-700",
-                },
-            },
-        }).mount()
-
-        return () => {
-            slider.destroy()
-        }
-    }, [])
-
     return (
-        <>
-            {/*<!-- Component: Slider with controls inside --> */}
-            <div className="relative w-full glide-01">
-                {/*    <!-- Slides --> */}
-                <div className="overflow-hidden" data-glide-el="track">
-                    <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
-                        {
-                            projects.map((page, idx: number) => (
-
-                                <li>
-                                    <SliderInside key={idx} name={page.frontMatter.title}
-                                                  description={page.frontMatter.short_story}
-                                                  collaborators={page.frontMatter.collaborators}
-                                                  image={page.frontMatter.images[0]} link={page.route}/>
-                                </li>
-
-                            ))
-                        }
-
-
-                    </ul>
-                </div>
-                {/*    <!-- Controls --> */}
-                <div
-                    className="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2 "
-                    data-glide-el="controls"
-                >
-                    <button
-                        className="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full border-slate-700 bg-white/20 text-slate-700 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
-                        data-glide-dir="<"
-                        aria-label="prev slide"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            className="w-5 h-5"
-                        >
-                            <title>prev slide</title>
+        <section className="py-14 bg-white">
+            <div className="max-w-screen-xl md:px-8">
+                <div className="items-center mx-auto sm:px-4 md:px-0 lg:flex">
+                    <div className="flex-1 sm:hidden lg:block">
+                        <svg viewBox="0 0 232.85 264.02" className="w-3/5 mx-auto">
+                            <defs>
+                                <style>
+                                    {".cls-15{fill:#fff}.cls-17{fill:#b19bc0}.cls-19{fill:#222359}"}
+                                </style>
+                            </defs>
                             <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+                                d="M225.05 180.08V83.05c0-8.25-4.29-15.84-11.55-19.8L130 15.07c-6.93-3.96-15.84-3.96-22.77 0L23.07 63.25c-6.93 3.96-11.55 11.55-11.55 19.8v96.7c0 8.25 4.29 15.84 11.55 19.8l83.83 48.52c6.93 3.96 15.84 3.96 22.77 0l83.83-48.52c7.26-3.96 11.55-11.55 11.55-19.47z"
+                                style={{
+                                    fill: "#233851",
+                                }}
+                            />
+                            <path
+                                d="M85.68 54.73c5.94 0 10.76-4.82 10.76-10.76s-4.82-10.76-10.76-10.76-10.76 4.82-10.76 10.76 4.82 10.76 10.76 10.76zm0-18.68c4.38 0 7.92 3.55 7.92 7.92s-3.55 7.92-7.92 7.92-7.92-3.55-7.92-7.92 3.55-7.92 7.92-7.92zM54.33 160.71c-.36 1.06-.76 2.1-1.18 3.14-.41 1.04 1.15 1.69 1.58.64.43-1.07.84-2.15 1.22-3.24.36-1.06-1.25-1.62-1.61-.55zM130.62 110.26c-3.71 0-6.71 3.01-6.71 6.71 0 2.72 1.63 5.15 4.13 6.2-4.12 10.77-13.13 19.06-24.22 22.23-.47-5.56-5.14-9.85-10.72-9.85-5.94 0-10.76 4.82-10.76 10.76 0 1.12.17 2.21.49 3.22-25.76 14.34-30.35 49.43-8.74 70.12a38.244 38.244 0 0 1-11.05 9.2c.59.27 1.08.65 1.48 1.09 4.18-2.42 7.84-5.52 10.82-9.14 3.6 3.19 7.73 5.82 12.26 7.69a10.71 10.71 0 0 0-.65 3.68c0 5.94 4.82 10.76 10.76 10.76s10.76-4.82 10.76-10.76-4.82-10.76-10.76-10.76c-3.92 0-7.51 2.12-9.41 5.53-4.4-1.81-8.42-4.36-11.91-7.48a40.1 40.1 0 0 0 7.76-29.64 6.708 6.708 0 0 0 4.48-6.33c0-1.98-.86-3.84-2.37-5.12 11.48-10.87 30.78-5.2 34.22 10.51a6.711 6.711 0 0 0 1.11 13.33 6.708 6.708 0 0 0 .61-13.39c-3.56-17.38-24.98-23.61-37.41-11.39a6.711 6.711 0 0 0-9.59 6.06c0 3.7 3.01 6.71 6.71 6.71.19 0 .38 0 .57-.02a38.423 38.423 0 0 1-7.35 28.12c-20.58-19.87-16.24-53.35 8.33-67.19 1.82 3.64 5.54 5.95 9.63 5.95 5.61 0 10.29-4.32 10.73-9.91 11.87-3.24 21.52-12.04 25.86-23.55.31.04.62.07.94.07 3.71 0 6.71-3.01 6.71-6.71s-3.01-6.71-6.71-6.71zM97.71 224.27c4.37 0 7.92 3.55 7.92 7.92s-3.55 7.92-7.92 7.92-7.92-3.55-7.92-7.92 3.55-7.92 7.92-7.92zm27.76-28.74c0 2.14-1.73 3.87-3.87 3.87s-3.87-1.73-3.87-3.87 1.73-3.87 3.87-3.87 3.87 1.73 3.87 3.87zm-43.55-8.14c-2.14 0-3.87-1.73-3.87-3.87s1.73-3.87 3.87-3.87 3.87 1.73 3.87 3.87-1.73 3.87-3.87 3.87zm11.17-33.14c-4.37 0-7.92-3.55-7.92-7.92s3.55-7.92 7.92-7.92 7.92 3.55 7.92 7.92-3.55 7.92-7.92 7.92zm37.52-33.4c-2.14 0-3.87-1.73-3.87-3.87s1.73-3.87 3.87-3.87 3.87 1.73 3.87 3.87-1.73 3.87-3.87 3.87zM58.85 147.76c.11-1.15.18-2.29.23-3.45.03-1.11-1.67-1.19-1.7-.05a75.31 75.31 0 0 1-.22 3.35c-.09 1.13 1.6 1.25 1.7.15zM57.08 135.87c.12 1.12.2 2.23.26 3.35.06 1.13 1.76 1.02 1.7-.09-.06-1.16-.15-2.29-.27-3.45-.13-1.13-1.81-.92-1.69.18zM55.57 127.61c.28 1.08.53 2.17.75 3.27.22 1.12 1.89.75 1.67-.33a63.29 63.29 0 0 0-.77-3.37c-.28-1.07-1.93-.67-1.65.44zM54.43 119c-.46-1.04-2-.34-1.57.67.44 1.04.84 2.07 1.22 3.13.38 1.04 1.98.5 1.6-.58-.39-1.09-.81-2.15-1.26-3.22zM50.48 111.32c-.6-.97-2.03-.05-1.45.89.58.96 1.13 1.92 1.67 2.92.53.99 2.03.19 1.5-.8-.55-1.02-1.11-2.02-1.72-3zM20.31 86.55c-1.09-.39-2.18-.76-3.28-1.09-.71-.21-1.32.51-1.01 1.18.11.22.29.38.53.45 1.07.32 2.13.68 3.18 1.06s1.64-1.21.59-1.6zM57.4 156.28c.27-1.13.51-2.24.73-3.38.19-1.09-1.48-1.41-1.68-.3-.21 1.11-.44 2.19-.71 3.28-.27 1.1 1.39 1.48 1.66.4zM28.18 90.11a59.55 59.55 0 0 0-3.09-1.56c-1.01-.47-1.75 1.07-.72 1.54 1.02.48 2.01.98 3 1.52.98.53 1.8-.95.81-1.5zM12 84.18c-1.14-.23-2.26-.43-3.41-.6-1.1-.15-1.36 1.52-.24 1.69 1.11.17 2.2.36 3.3.58 1.11.22 1.43-1.44.34-1.67zM25.03 193.79c-1.02.5-.25 2.01.75 1.53 1.04-.51 2.06-1.04 3.07-1.6.98-.56.13-2.03-.84-1.48-.98.55-1.97 1.06-2.98 1.55zM41.27 182.02c-.78.81-1.58 1.58-2.41 2.35s.35 2 1.16 1.25c.85-.78 1.67-1.58 2.47-2.41.77-.8-.44-2-1.23-1.18zM45.45 104.29c-.73-.87-2.02.23-1.31 1.09.72.86 1.4 1.74 2.07 2.64.68.91 2.03-.11 1.37-1.01-.69-.93-1.4-1.83-2.13-2.72zM46.64 175.58c-.66.91-1.33 1.8-2.04 2.67-.71.89.63 1.93 1.33 1.07.73-.9 1.42-1.81 2.1-2.75.66-.93-.75-1.89-1.39-.99zM32.62 92.78c-.95-.62-1.87.8-.94 1.42.94.62 1.84 1.27 2.74 1.94.92.68 1.91-.71 1.02-1.37-.93-.69-1.86-1.36-2.83-2zM32.29 189.59c-.94.65.05 2.03.96 1.41.95-.65 1.88-1.33 2.8-2.03.89-.7-.16-2.02-1.05-1.35-.89.69-1.79 1.34-2.72 1.97zM39.46 98.07c-.86-.76-1.94.54-1.13 1.28.83.75 1.64 1.52 2.43 2.31.82.81 1.97-.43 1.21-1.21-.81-.82-1.65-1.61-2.51-2.38zM17.23 196.89c-1.08.35-.54 1.95.52 1.62 1.1-.35 2.19-.73 3.27-1.14 1.04-.4.44-2-.62-1.59-1.04.39-2.11.77-3.17 1.1z"
+                                className="cls-15"
+                            />
+                            <path
+                                d="M111.15 69.9c-2.49 0-4.77 1.38-5.93 3.57-19.2-6.23-39.64 3.48-47.18 22.04-3.4-.54-6.84.57-9.29 3.01-.82-.92-1.66-1.81-2.53-2.68C34.77 84.39 19.1 77.19 1.74 76.73c.21.95.34 1.9.39 2.85 16.42.56 31.24 7.42 42.08 18.27s18.32 26.96 18.32 44.24-7 32.92-18.32 44.24a62.513 62.513 0 0 1-26.38 15.71c.9.68 1.77 1.41 2.62 2.16 4.77-1.57 9.31-3.66 13.52-6.23.89 2.82.14 5.92-1.95 8.02a7.897 7.897 0 0 1-7.6 2.06c.99 1.02 1.98 2.04 2.98 3.05 2.58-.23 4.9-1.37 6.63-3.1 3.03-3.03 3.98-7.62 2.39-11.59 3.53-2.37 6.81-5.07 9.8-8.07 11.84-11.84 19.16-28.19 19.16-46.25 0-9.18-1.89-17.92-5.31-25.85 4.22-1.56 7.04-5.59 7.04-10.1s-2.99-8.78-7.4-10.23c7.28-17.57 26.66-26.73 44.91-20.86-.12.5-.18 1.02-.18 1.55 0 3.46 2.63 6.36 6.07 6.68-.69 11.19-6 21.54-14.67 28.65a6.71 6.71 0 0 0-5.16-2.41c-3.71 0-6.71 3.01-6.71 6.71s3.01 6.71 6.71 6.71 6.71-3.01 6.71-6.71c0-1.02-.23-1.99-.64-2.86 9.17-7.45 14.77-18.35 15.45-30.15a6.711 6.711 0 0 0-1.06-13.34zm-46.88 36.24c0 3.4-2.16 6.42-5.39 7.51a65.395 65.395 0 0 0-8.28-12.97c4.95-5.2 13.67-1.61 13.67 5.46zm26.42 13.97c-2.14 0-3.87-1.73-3.87-3.87s1.73-3.87 3.87-3.87 3.87 1.73 3.87 3.87-1.73 3.87-3.87 3.87zm20.46-39.63c-2.14 0-3.87-1.73-3.87-3.87s1.73-3.87 3.87-3.87 3.87 1.73 3.87 3.87-1.73 3.87-3.87 3.87z"
+                                className="cls-15"
+                            />
+                            <path
+                                d="M51.03 168.43c-.51.99-1.06 1.97-1.63 2.94-.56.96.88 1.84 1.47.87.59-1 1.15-2 1.68-3.03.52-1.01-1.01-1.76-1.52-.78zM98.22 144.43h-3.03v-3.03c0-.56-.45-1.01-1.01-1.01h-1.01c-.56 0-1.01.45-1.01 1.01v3.03h-3.03c-.56 0-1.01.45-1.01 1.01v1.01c0 .56.45 1.01 1.01 1.01h3.03v3.03c0 .56.45 1.01 1.01 1.01h1.01c.56 0 1.01-.45 1.01-1.01v-3.03h3.03c.56 0 1.01-.45 1.01-1.01v-1.01c0-.56-.45-1.01-1.01-1.01z"
+                                className="cls-15"
+                            />
+                            <path
+                                d="M56.26 140.77c0-29.34-23.87-53.21-53.21-53.21-.6 0-1.09.49-1.09 1.09v104.24c0 .6.49 1.09 1.09 1.09 29.34 0 53.21-23.87 53.21-53.21z"
+                                className="cls-17"
+                            />
+                            <path
+                                d="M50.6 135.89c-2.11-24.45-23.73-42.62-48.18-40.51a.91.91 0 0 0-.83.99l7.51 86.86c.04.5.49.88.99.83 24.45-2.11 42.62-23.73 40.51-48.18z"
+                                style={{
+                                    fill: "#c93d59",
+                                }}
+                            />
+                            <path
+                                d="M43.16 139.2c-1.61-18.58-18.03-32.4-36.62-30.79-.38.03-.67.37-.63.75l5.71 66.02c.03.38.37.67.75.63 18.58-1.61 32.4-18.03 30.79-36.62z"
+                                className="cls-17"
+                            />
+                            <path
+                                d="M37.59 142.72c0-15.18-12.35-27.53-27.53-27.53a.57.57 0 0 0-.57.57v53.93c0 .31.25.57.57.57 15.18 0 27.53-12.35 27.53-27.53z"
+                                style={{
+                                    fill: "#eb8b8e",
+                                }}
+                            />
+                            <path
+                                d="M29.19 140.1c-.89-10.31-10-17.97-20.31-17.08a.39.39 0 0 0-.35.42l3.17 36.62c.02.21.21.37.42.35 10.31-.89 17.97-10 17.08-20.31z"
+                                style={{
+                                    fill: "#f0bda4",
+                                }}
+                            />
+                            <path
+                                d="m217.57 68.31-95.63-55.6c-2.97-1.48-6.67-1.48-9.64 0l-95.63 55.6c-2.97 1.48-4.45 4.45-4.45 8.15v110.45c0 3.71 1.48 6.67 4.45 8.15l95.63 55.6c2.97 1.48 6.67 1.48 9.64 0l95.63-55.6c2.97-1.48 4.45-4.45 4.45-8.15V76.46c0-3.71-1.48-6.67-4.45-8.15zM124.91 8.26l95.63 54.86c4.45 2.97 7.41 8.15 7.41 13.34v110.45c0 5.19-2.97 10.38-7.41 13.34l-95.63 54.86c-5.19 2.97-10.38 2.97-15.57 0l-95.63-54.86c-4.45-2.97-7.41-8.15-7.41-13.34V76.46c0-5.19 2.97-10.38 7.41-13.34l95.63-54.86c5.19-2.97 10.38-2.97 15.57 0z"
+                                className="cls-15"
+                            />
+                            <path
+                                d="M221.95 65.42 121.49 7.01c-3.12-1.56-7.01-1.56-10.12 0L10.91 65.42c-3.12 1.56-4.67 4.67-4.67 8.57v116.04c0 3.89 1.56 7.01 4.67 8.57l100.46 58.41c3.12 1.56 7.01 1.56 10.12 0l100.46-58.41c3.12-1.56 4.67-4.67 4.67-8.57V73.99c0-3.89-1.56-7.01-4.67-8.57zM124.6 2.34l100.46 57.63c4.67 3.11 7.79 8.57 7.79 14.02v116.04c0 5.45-3.12 10.9-7.79 14.02L124.6 261.68c-5.45 3.12-10.9 3.12-16.35 0L7.79 204.05C3.12 200.93 0 195.48 0 190.03V73.99c0-5.45 3.12-10.9 7.79-14.02L108.25 2.34c5.45-3.12 10.9-3.12 16.35 0z"
+                                className="cls-19"
+                            />
+                            <path
+                                d="M18.06 134.62c0-3.36-2.74-6.1-6.1-6.1-.07 0-.13.06-.13.13v11.95c0 .07.06.13.13.13 3.36 0 6.1-2.74 6.1-6.1zM18.17 149.59c0-3.36-2.74-6.1-6.1-6.1-.07 0-.13.06-.13.13v11.95c0 .07.06.13.13.13 3.36 0 6.1-2.74 6.1-6.1z"
+                                className="cls-19"
                             />
                         </svg>
-                    </button>
-                    <button
-                        className="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full border-slate-700 bg-white/20 text-slate-700 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
-                        data-glide-dir=">"
-                        aria-label="next slide"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            className="w-5 h-5"
-                        >
-                            <title>next slide</title>
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                            />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            {/*<!-- End Slider with controls inside --> */}
-        </>
-=======
-        <section>
-            <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 overflow-hidden md:px-8 md:flex">
-                <div className='flex-none space-y-5 max-w-xl'>
-                    <p>
-                        The Health Informatics, Visualization, and Equity (HIVE) Lab in the Institute of Health Policy, Management and Evaluation, Dalla Lana School of Public Health at the University of Toronto is a group of data scientists, epidemiologists, and software developers working at the interface of Machine Learning, AI, Information Visualization, and Health Informatics.
-                    </p>
-                </div>
-                <div className='flex-1 hidden md:block'>
-                    {/* Replace with your image */}
-                    <img src="img/homepage-aboutus-right.png" className="max-w-xl" />
+                    </div>
+                    <div className="max-w-xl sm:mx-auto px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
+                        <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                            Welcome to HIVE Lab at UofT!
+                        </p>
+                        <p className="mt-3 text-gray-600">
+                            The Health Informatics, Visualization, and Equity (HIVE) Lab in the Institute of Health Policy, Management and Evaluation, Dalla Lana School of Public Health at the University of Toronto is a group of data scientists, epidemiologists, and software developers working at the interface of Machine Learning, AI, Information Visualization, and Health Informatics. As a research group, we are passionate about integrating data across different sources and scales to develop novel methods and open source tools to promote health at individual and population levels and to foster national and international collaborations to advance the quest for health equity.
+                        </p>
+
+                    </div>
                 </div>
             </div>
         </section>
->>>>>>> 8539519 (improve team UI)
-    )
+    );
 }
+
+// const SliderInside = (props: {
+//     name: string,
+//     description?: string,
+//     link?: string,
+//     image: string,
+//     collaborators?: string[]
+// }) => {
+//     return (
+//         <section className="py-16 bg-[#F5F5F7]">
+//             <div
+//                 className="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
+//                 <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
+//                     {/*<h1 className="text-sm text-indigo-600 font-medium">*/}
+
+//                     {/*</h1>*/}
+//                     <h2 className="text-4xl text-gray-800 font-extrabold md:text-5xl">
+//                         {props.name}                    </h2>
+//                     <p className="line-clamp-5">
+//                         {props.description}
+//                     </p>
+//                     <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
+//                         <a href={props.link}
+//                             className="flex items-center justify-center gap-x-2 py-2 px-4 text-gray-700 hover:text-gray-500 font-medium duration-150 active:bg-gray-100 border rounded-lg md:inline-flex">
+//                             Read more
+//                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+//                                 fill="currentColor" className="w-5 h-5">
+//                                 <path fillRule="evenodd"
+//                                     d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"
+//                                     clipRule="evenodd" />
+//                             </svg>
+//                         </a>
+//                     </div>
+//                 </div>
+//                 <div className="flex-none mt-14 md:mt-0 md:max-w-xl">
+//                     <img
+//                         src={props.image}
+//                         className=" max-h-96 md:rounded-tl-[108px]"
+//                         alt=""
+//                     />
+//                 </div>
+//             </div>
+//             {
+//                 props.collaborators && (<div className="mt-14 px-4 md:px-8">
+//                     <p className="text-center text-sm text-gray-700 font-semibold">Collaborators</p>
+//                     <div className="flex justify-center items-center flex-wrap gap-x-12 gap-y-6 mt-6">
+
+//                         {props.collaborators.map((imageLink: string, idx: number) => (
+//                             <img width="150" height="23" src={imageLink} key={idx} />
+//                         ))}
+//                     </div>
+//                 </div>)
+//             }
+
+//         </section>
+//     )
+// }
+
+// export default function SliderControlsInside() {
+//     const [projects] = useState(getPagesUnderRoute("/research"))
+//     useEffect(() => {
+//         const slider = new Glide(".glide-01", {
+//             type: "slider",
+//             focusAt: "center",
+//             perView: 1,
+//             autoplay: 3000,
+//             animationDuration: 700,
+//             gap: 0,
+//             classes: {
+//                 nav: {
+//                     active: "[&>*]:bg-wuiSlate-700",
+//                 },
+//             },
+//         }).mount()
+
+//         return () => {
+//             slider.destroy()
+//         }
+//     }, [])
+
+//     return (
+//         <>
+//             {/*<!-- Component: Slider with controls inside --> */}
+//             <div className="relative w-full glide-01">
+//                 {/*    <!-- Slides --> */}
+//                 <div className="overflow-hidden" data-glide-el="track">
+//                     <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
+//                         {
+//                             projects.map((page, idx) => (
+
+//                                 <li>
+//                                     <SliderInside key={idx} name={page.frontMatter.title}
+//                                         description={page.frontMatter.short_story}
+//                                         collaborators={page.frontMatter.collaborators}
+//                                         image={page.frontMatter.images[0]} link={page.route} />
+//                                 </li>
+
+//                             ))
+//                         }
+
+
+//                     </ul>
+//                 </div>
+//                 {/*    <!-- Controls --> */}
+//                 <div
+//                     className="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2 "
+//                     data-glide-el="controls"
+//                 >
+//                     <button
+//                         className="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full border-slate-700 bg-white/20 text-slate-700 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+//                         data-glide-dir="<"
+//                         aria-label="prev slide"
+//                     >
+//                         <svg
+//                             xmlns="http://www.w3.org/2000/svg"
+//                             fill="none"
+//                             viewBox="0 0 24 24"
+//                             strokeWidth="1.5"
+//                             stroke="currentColor"
+//                             className="w-5 h-5"
+//                         >
+//                             <title>prev slide</title>
+//                             <path
+//                                 strokeLinecap="round"
+//                                 strokeLinejoin="round"
+//                                 d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+//                             />
+//                         </svg>
+//                     </button>
+//                     <button
+//                         className="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full border-slate-700 bg-white/20 text-slate-700 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+//                         data-glide-dir=">"
+//                         aria-label="next slide"
+//                     >
+//                         <svg
+//                             xmlns="http://www.w3.org/2000/svg"
+//                             fill="none"
+//                             viewBox="0 0 24 24"
+//                             strokeWidth="1.5"
+//                             stroke="currentColor"
+//                             className="w-5 h-5"
+//                         >
+//                             <title>next slide</title>
+//                             <path
+//                                 strokeLinecap="round"
+//                                 strokeLinejoin="round"
+//                                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+//                             />
+//                         </svg>
+//                     </button>
+//                 </div>
+//             </div>
+//             {/*<!-- End Slider with controls inside --> */}
+//         </>
+//     )
+// }

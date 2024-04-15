@@ -25,7 +25,9 @@
     "next-sitemap": "^4.2.3",
     "nextra": "3.0.0-alpha.22",
     "nextra-theme-docs": "3.0.0-alpha.22",
+    "prop-types": "^15.8.1",
     "react": "^18",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "^18",
     "sass": "^1.72.0"
   },

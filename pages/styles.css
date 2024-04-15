@@ -9,3 +9,6 @@
 /* .nextra-sidebar-container {
   border-right: 1px solid grey;
 } */
+.awssld__content {
+  background-color: transparent !important;
+}

@@ -42,7 +42,7 @@ export default memo(() => {
                     return a.value - b.value; // Sort by value if they are different
                 } else {
                     // If values are same, sort by frontMatter.date
-                    return new Date(b.member?.frontMatter?.date).getTime() - new Date(a.member?.frontMatter?.date).getTime();
+                    return new Date(a.member?.frontMatter?.date).getTime() - new Date(b.member?.frontMatter?.date).getTime();
                 }
             });
             teamsByCategoryMap[category] = teamsByCategoryMap[category].map(item => item.member); // Removing the 'value' property

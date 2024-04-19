@@ -23,11 +23,10 @@ export default () => {
                 <div className="mt-12 flex justify-center">
                     <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-6 md:gap-x-16 md:grid-cols-3 lg:grid-cols-4">
 
-
                         {LOGOS.map((logo, index) => (
-                            <li>
+                            <li key={index}>
                                 <img
-                                    src={logo} key={index}
+                                    src={logo}
                                     width="150px" height="50px"/>
                             </li>
 

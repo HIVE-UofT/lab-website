@@ -130,7 +130,7 @@ const config: DocsThemeConfig = {
                   </li>
                 </ul>
               </div>
-              <p className=" border-t border-gray-100 text-xs text-gray-500"> Copyright © 2024 HIVE Lab @UofT. All rights reserved.</p>
+              <p className=" border-t border-gray-100 text-xs text-gray-500"> Copyright © 2023 HIVE Lab @UofT. All rights reserved.</p>
             </div>
           </footer>
         </>

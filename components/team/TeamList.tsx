@@ -72,7 +72,7 @@ export default memo(() => {
         <div ref={backgroundImageRef}>
             <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-8">
                 <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
-                    <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
+                    <div className="px-4 space-y-3 mt-6 sm:px-0 md:mt-0">
                         <h3 className="text-3xl font-semibold sm:text-4xl">
                             Our Team at Hive Lab
                         </h3>

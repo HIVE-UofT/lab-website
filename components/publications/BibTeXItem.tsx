@@ -254,7 +254,7 @@ const BibTeXItem: React.FC<BibTeXItemProps> = ({ entry, citationStyle }) => {
         const pagesPart = pages ? `${pages.replace('--', '-')}` : '';
 
         author = getAuthors(convertLatexToUnicode(author));
-        const titleLink = <Link href={`/articles/${entry.key}.pdf`} target='_blank'>{convertLatexToUnicode(entry.title)}</Link>;
+        const titleLink = <Link href={`/publications/${entry.key}.pdf`} target='_blank'>{convertLatexToUnicode(entry.title)}</Link>;
 
         const journalOrBooktitle = convertLatexToUnicode(journal || booktitle);
 

@@ -31,17 +31,13 @@ export default {
     title: "Open Positions",
     // type: "page"
   },
-  "research": {
-    title: "Researchs",
+  "projects": {
+    title: "Projects",
     theme: {
       layout: 'raw'
     }
   },
-  "news": {
-    title: "Researchs",
-    display: 'hidden',
-    // type: "page"
-  },
+  
   "publication": {
     title: "Publications",
     // type: "page"

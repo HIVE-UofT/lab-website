@@ -4,7 +4,7 @@ import { Page } from "nextra";
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/fall-animation.css';
-import ReseachCard from './ReseachCard';
+import ProjectCard from './ProjectCard';
 
 export default () => {
     const [research, setResearch] = useState<Page[]>([]);
@@ -46,7 +46,7 @@ export default () => {
                 {research?.map((page: Page, idx: number) => {
                     const { story, title, image, collaborators } = page?.frontMatter;
                     return (<div key={idx}>
-                        <ReseachCard
+                        <ProjectCard
                             title={title}
                             story={story}
                             image={image}

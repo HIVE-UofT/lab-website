@@ -19,7 +19,7 @@ const TeamCard = memo(({ frontMatter, route, idx = 0, showImage = true }: { rout
 
     const { range, current_position } = frontMatter;
     const imageSize = idx == 0 ? "w-48 h-48 mb-4" : "w-24 h-24";
-    
+
     const View = (
         <>
             {(showImage) && (
@@ -42,7 +42,7 @@ const TeamCard = memo(({ frontMatter, route, idx = 0, showImage = true }: { rout
                     <p>{frontMatter.role}</p>
                 </WrapLink>
                 {range && (
-                    <ReactMarkdown>{`${range}, ${current_position}`}</ReactMarkdown>
+                    <ReactMarkdown>{`${range} ${current_position}`}</ReactMarkdown>
                 )}
 
 

@@ -45,7 +45,7 @@ export default [
                 <path fill="rgba(255, 255, 255, 0.5)"
                     d="M121.037 298.667c23.968-50.453 75.392-85.334 134.963-85.334s110.995 34.881 134.963 85.334H121.037z" />
             </svg>,
-        field: 'scholar_google'
+        field: 'google_scholar'
     },
     {
         icon:

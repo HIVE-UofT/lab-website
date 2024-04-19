@@ -34,7 +34,7 @@ export default memo(() => {
                 value: parseInt(categoryValue) // Converting the category value to integer for sorting
             });
         });
-
+    
         // Sort teams by value within each category
         for (const category in teamsByCategoryMap) {
             teamsByCategoryMap[category].sort((a, b) => {

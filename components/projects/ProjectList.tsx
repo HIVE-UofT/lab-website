@@ -11,7 +11,7 @@ export default () => {
     const divRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        setResearch(getPagesUnderRoute("/research"));
+        setResearch(getPagesUnderRoute("/projects"));
 
         // function getHeight() {
         //     const footer = document.querySelector("footer");

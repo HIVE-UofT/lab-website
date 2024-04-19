@@ -15,13 +15,13 @@ const WrapLink = ({ href, children }: { href?: string, children: ReactNode }) =>
     return children;
 }
 
-const TeamCard = memo(({ frontMatter, route, idx = 0 }: { route?: string, frontMatter?: FrontMatter, idx?: number }) => {
+const TeamCard = memo(({ frontMatter, route, idx = 0, showImage = true }: { route?: string, frontMatter?: FrontMatter, idx?: number, showImage: boolean }) => {
 
     const { range, current_position } = frontMatter;
 
     const View = (
         <>
-            {(idx > 0 && !range) && (
+            {(showImage) && (
                 <div className="flex-none w-24 h-24">
                     <WrapLink href={route}>
                         <img

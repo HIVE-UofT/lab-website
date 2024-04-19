@@ -48,7 +48,7 @@ export default memo(() => {
             teamsByCategoryMap[category] = teamsByCategoryMap[category].map(item => item.member); // Removing the 'value' property
 
         }
-        console.log(teamsByCategoryMap)
+        // console.log(teamsByCategoryMap)
         setTeams(teamsByCategoryMap);
 
         // TODO: Temp trick until update will publish in the Nextra
@@ -98,7 +98,13 @@ export default memo(() => {
                             )}
                             <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
                                 {teams[category].map((page: Page, idx: number) => (
-                                    <TeamCard key={idx} frontMatter={page?.frontMatter} route={page?.route} idx={idx + 1} />
+                                    <TeamCard
+                                    key={idx}
+                                    frontMatter={page?.frontMatter}
+                                    route={page?.route}
+                                    idx={idx + 1}
+                                    showImage={page?.frontMatter?.range ? false: true}
+                                />
                                 ))}
                             </ul>
                         </div>

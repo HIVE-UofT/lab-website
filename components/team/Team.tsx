@@ -30,7 +30,7 @@ export default memo(({ children }: { children: ReactNode }) => {
                             <svg className="rtl:rotate-180 block w-3 h-3 mx-1" aria-hidden="true" fill="none" viewBox="0 0 6 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
                             </svg>
-                            <a href={`/team?#${frontMatter.category || 'PI'}`} className="ms-1 text-sm font-medium hover:text-blue-600 md:ms-2">{frontMatter.category || 'PI'}</a>
+                            <a href={`/team?#${frontMatter.role || 'PI'}`} className="ms-1 text-sm font-medium hover:text-blue-600 md:ms-2">{frontMatter.role || 'PI'}</a>
                         </div>
                     </li>
                     {/* <li aria-current="page">

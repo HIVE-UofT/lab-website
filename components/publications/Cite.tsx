@@ -23,7 +23,7 @@ const Cite: React.FC<CiteProps> = ({ cites }) => {
   return (
     <span>[
       {refs.map((x, i) =>
-        (<Link key={x.key} href={`/articles/${x.key}.pdf`} target='_blank'>{x.index}{i != refs.length - 1 && ', '}</Link>))
+        (<Link key={x.key} href={`/publications/${x.key}.pdf`} target='_blank'>{x.index}{i != refs.length - 1 && ', '}</Link>))
       }
       ]
     </span>

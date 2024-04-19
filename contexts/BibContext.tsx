@@ -53,7 +53,7 @@ export const BibProvider: React.FC<BibProviderProps> = ({ children }) => {
     useEffect(() => {
         const fetchBibTeXData = async () => {
             try {
-                const response = await fetch('/articles/BibTeX.bib');
+                const response = await fetch('/publications/BibTeX.bib');
                 const content = await response.text();
                 const parsedBibTeX = parse(content);
                 const references = parsedBibTeX.filter((x) => x.itemtype === 'entry' && !x.comment);

@@ -77,7 +77,7 @@ export default memo(() => {
                 <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
                     <div className="px-4 space-y-3 mt-6 sm:px-0 md:mt-0">
                         <h3 className="text-3xl font-semibold sm:text-4xl">
-                            Our Team at Hive Lab
+                            Our Team at HIVE Lab
                         </h3>
                         <p className="mt-3">
                             Our diverse experts specialize in AI for public health. Join us as we innovate in this critical domain, shaping the future of AI-driven public health.

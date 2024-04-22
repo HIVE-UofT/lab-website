@@ -3,6 +3,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
 import { useConfig } from 'nextra-theme-docs'
 import Member from './components/team/Member'
+import Logo from './components/hive/Logo'
 
 const config: DocsThemeConfig = {
   darkMode: false,
@@ -11,8 +12,9 @@ const config: DocsThemeConfig = {
   },
   logo: () => {
     return (
-      <img width={92} src='/img/hive-logo-header.svg' alt='hive-logo' />
-      //  <img src='/img/hive-logo-header.svg'  alt='hive-logo'/>
+      <div className='w-12 h-12'>
+        <Logo />
+      </div>
     )
   },
   sidebar: {

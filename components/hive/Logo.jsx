@@ -1,9 +1,11 @@
 import * as React from "react"
-const SvgComponent = (props) => (
+const Logo = ({height, ...props}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={310.466}
-    height={352}
+    className="w-full h-full"
+    // width="100%"
+    // height={height || "48px"}
+    viewBox="0 0 310.46597 351.99988"
     {...props}
   >
     <defs>
@@ -197,4 +199,4 @@ const SvgComponent = (props) => (
     />
   </svg>
 )
-export default SvgComponent
+export default Logo

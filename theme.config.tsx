@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import { useConfig } from 'nextra-theme-docs'
 import Member from './components/team/Member'
 import Logo from './components/hive/Logo'
+import Hive from './components/hive/Hive'
 
 const config: DocsThemeConfig = {
   darkMode: false,
@@ -12,8 +13,9 @@ const config: DocsThemeConfig = {
   },
   logo: () => {
     return (
-      <div className='w-12 h-12'>
+      <div className='flex h-12'>
         <Logo />
+        <Hive />
       </div>
     )
   },

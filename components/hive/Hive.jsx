@@ -1,6 +1,10 @@
 import * as React from "react"
 const SvgComponent = (props) => (
-  <svg viewBox="0 0 833.69 162.25" xmlns="http://www.w3.org/2000/svg">
+  <svg 
+  className="w-full h-full" 
+  viewBox="0 0 833.69 162.25" 
+    {...props}
+  >
  <defs>
   <clipPath id="clipPath2">
    <path transform="matrix(.13858 0 0 .13858 199.06 -176.62)" d="m0 0h1600v1600h-1600z"/>

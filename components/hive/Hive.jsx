@@ -1,8 +1,11 @@
 import * as React from "react"
 const SvgComponent = (props) => (
   <svg 
-  className="w-full h-full" 
-  viewBox="0 0 833.69 162.25" 
+    xmlns="http://www.w3.org/2000/svg"
+    className="w-full h-full"
+    // width="100%"
+    // height={height || "48px"}
+    viewBox="0 0 833.69 162.25" 
     {...props}
   >
  <defs>

@@ -14,8 +14,8 @@ const config: DocsThemeConfig = {
   logo: () => {
     return (
       <div className='flex h-12'>
-        <Logo />
-        <Hive />
+        <Logo className='mr-0' />
+        <Hive className='ml-2 h-8 self-center' />
       </div>
     )
   },

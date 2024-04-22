@@ -2,7 +2,7 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
 import { useConfig } from 'nextra-theme-docs'
-import Team from './components/team/Team'
+import Member from './components/team/Member'
 
 const config: DocsThemeConfig = {
   darkMode: false,
@@ -94,9 +94,9 @@ const config: DocsThemeConfig = {
     let View = children;
     if (router.asPath.startsWith("/team/")) {
       View = (
-        <Team>
+        <Member>
           {children}
-        </Team>
+        </Member>
       );
     }
 

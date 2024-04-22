@@ -33,11 +33,11 @@ export default {
   },
   "projects": {
     title: "Projects",
+    type: "page",
     theme: {
-      layout: 'raw'
+      layout: 'default',
     }
   },
-  
   "publication": {
     title: "Publications",
     // type: "page"

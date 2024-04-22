@@ -2,11 +2,11 @@ import React from "react";
 
 
 const LOGOS = [
-    "https://diabetes-stigma.hivelab-uoft.ca/static/media/diabetescanada.3e61131b.png",
-    "https://diabetes-stigma.hivelab-uoft.ca/static/media/p3.e86920ac.svg",
-    "https://diabetes-stigma.hivelab-uoft.ca/static/media/p4.005df2db.svg",
-    "https://unicef-education.hivelab-uoft.ca/static/media/UNICEF.05e400c5.png",
-    "https://unicef-education.hivelab-uoft.ca/static/media/DSI.1e28db66.png",
+    {image:"https://diabetes-stigma.hivelab-uoft.ca/static/media/diabetescanada.3e61131b.png", size:"150px"},
+    {image:"https://diabetes-stigma.hivelab-uoft.ca/static/media/p3.e86920ac.svg", size:"300px"},
+    {image:"https://diabetes-stigma.hivelab-uoft.ca/static/media/p4.005df2db.svg", size:"150px"},
+    {image:"https://unicef-education.hivelab-uoft.ca/static/media/UNICEF.05e400c5.png", size:"150px"},
+    {image:"https://unicef-education.hivelab-uoft.ca/static/media/DSI.1e28db66.png", size:"150px"},
 
 ];
 export default () => {
@@ -22,16 +22,13 @@ export default () => {
                 </div>
                 <div className="mt-12 flex justify-center">
                     <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-6 md:gap-x-16 md:grid-cols-3 lg:grid-cols-4">
-
                         {LOGOS.map((logo, index) => (
                             <li key={index}>
                                 <img
-                                    src={logo}
-                                    width="150px" height="50px"/>
+                                    src={logo.image}
+                                    width={logo.size} height="50px"/>
                             </li>
-
                         ))}
-
                     </ul>
                 </div>
             </div>

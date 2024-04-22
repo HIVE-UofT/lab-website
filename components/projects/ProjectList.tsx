@@ -62,13 +62,13 @@ export default () => {
                   />
                 </div>
                 <div className="mt-4">
-                  <h4 className="text-lg text-gray-700 font-semibold">
+                  <h4 className="text-xl text-gray-700 font-semibold">
                     {page.frontMatter?.title}
                   </h4>
                   {/* <Link href={page.route}>
                     <p className="text-[#35538E]">{page.frontMatter?.story}</p>
                   </Link> */}
-                   <p className="text-[#35538E]">{page.frontMatter?.story}</p>
+                   <p className="text-slate-400">{page.frontMatter?.story}</p>
                 </div>
               </li>
             ))}

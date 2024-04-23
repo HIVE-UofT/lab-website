@@ -42,7 +42,7 @@ export default () => {
     //  animation="fallAnimation"
     return (
         <div className="w-full h-2/3 pt-8" ref={divRef}>
-            <AwesomeSlider style={{ width: "100%", height: "100%", background: "#FAFAFA" }}>
+{/*             <AwesomeSlider style={{ width: "100%", height: "100%", background: "#FAFAFA" }}>
                 {research?.map((page: Page, idx: number) => {
                     const { story, title, image, collaborators } = page?.frontMatter;
                     return (<div key={idx}>
@@ -54,7 +54,7 @@ export default () => {
                     </div>);
                 })
                 }
-            </AwesomeSlider >
+            </AwesomeSlider > */}
         </div >
     )
 }

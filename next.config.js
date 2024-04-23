@@ -12,6 +12,8 @@ export default {
   // distDir: 'out',
   output: 'export',
   images: {
-    unoptimized: true,
+    loader: "akamai",
+    path: "",
   },
+  assetPrefix: "./",
 };

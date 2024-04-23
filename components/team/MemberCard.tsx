@@ -15,7 +15,7 @@ const WrapLink = ({ href, children }: { href?: string, children: ReactNode }) =>
     return children;
 }
 
-const TeamCard = memo(({ frontMatter, route, idx = 0, showImage = true }: { route?: string, frontMatter?: FrontMatter, idx?: number, showImage: boolean }) => {
+const MemberCard = memo(({ frontMatter, route, idx = 0, showImage = true }: { route?: string, frontMatter?: FrontMatter, idx?: number, showImage?: boolean }) => {
 
     const { range, current_position } = frontMatter;
     const imageSize = idx == 0 ? "w-48 h-48 mb-4" : "w-24 h-24";
@@ -82,4 +82,4 @@ const TeamCard = memo(({ frontMatter, route, idx = 0, showImage = true }: { rout
     );
 });
 
-export default TeamCard;
+export default MemberCard;

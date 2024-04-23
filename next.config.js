@@ -5,6 +5,7 @@ const withNextra = nextra({
   themeConfig: "./theme.config.tsx",
   latex: true,
   defaultShowCopyCode: true,
+  basePath: './lab-next-website/',
 });
 
 export default {

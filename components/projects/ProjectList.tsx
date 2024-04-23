@@ -54,10 +54,10 @@ export default () => {
           <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
             {projects.map((page, idx) => (
               <li key={idx}>
-                <div className="w-80 h-60 sm:h-52 md:h-56">
+                <div className="w-full h-60 sm:h-52 md:h-56">
                   <img
                     src={page.frontMatter?.image}
-                    className="w-full h-full  shadow-md rounded-xl"
+                    className="w-full h-full object-cover object-center shadow-md rounded-xl"
                     alt=""
                   />
                 </div>

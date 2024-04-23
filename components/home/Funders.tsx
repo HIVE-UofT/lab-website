@@ -1,13 +1,13 @@
 import React from "react";
 
-
 const LOGOS = [
-    {image:"https://diabetes-stigma.hivelab-uoft.ca/static/media/diabetescanada.3e61131b.png", size:"150px"},
-    {image:"https://diabetes-stigma.hivelab-uoft.ca/static/media/p3.e86920ac.svg", size:"300px"},
-    {image:"https://diabetes-stigma.hivelab-uoft.ca/static/media/p4.005df2db.svg", size:"150px"},
-    {image:"https://unicef-education.hivelab-uoft.ca/static/media/UNICEF.05e400c5.png", size:"150px"},
-    {image:"https://unicef-education.hivelab-uoft.ca/static/media/DSI.1e28db66.png", size:"150px"},
-
+    {image:"/funders/nserc.png", size:"150px"},
+    {image:"/funders/dsi.png", size:"150px"},
+    {image:"/funders/dalla_lana.png", size:"150px"},
+    {image:"/funders/ihpme.svg", size:"250px"},
+    {image:"/funders/ifp.png", size:"150px"},
+    {image:"/funders/diabetes_canada.png", size:"150px"},
+    {image:"/funders/unicef.png", size:"150px"},
 ];
 export default () => {
     return (

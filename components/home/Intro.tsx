@@ -13,7 +13,7 @@ export default function SliderControlsInside() {
                 <div className="items-center mx-auto sm:px-4 md:px-0 lg:flex">
                     <div className="flex-1 sm:hidden lg:block">
                         <center>
-                        <Logo className="w-3/5"/>
+                        <Logo className="w-64"/>
                         </center>
                     </div>
                     <div className="max-w-xl sm:mx-auto px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">

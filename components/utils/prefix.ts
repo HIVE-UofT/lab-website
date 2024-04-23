@@ -1,3 +1,3 @@
-const prefix = process.env.BASE_PATH || "/lab-next-website/";
+const prefix = process.env.BASE_PATH || "";
 
 export { prefix };

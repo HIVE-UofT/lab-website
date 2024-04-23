@@ -181,7 +181,7 @@ export const pageMap = [{
       "category": "C2_30_MSc Student",
       "date": "2023/05/2",
       "twitter": null,
-      "linkedin": "www.linkedin.com/in/juan-andres-medina-286604191",
+      "linkedin": "https://www.linkedin.com/in/juan-andres-medina-286604191?trk=contact-info",
       "google_scholar": null,
       "github": "https://github.com/juan-medinaf",
       "website": null,

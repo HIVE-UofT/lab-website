@@ -13,7 +13,7 @@ export default {
   output: 'export',
   images: {
     loader: "akamai",
-    path: "",
+    path: "./lab-next-website/",
   },
-  // assetPrefix: "./",
+  assetPrefix: "./",
 };

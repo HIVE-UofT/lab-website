@@ -15,5 +15,5 @@ export default {
     loader: "akamai",
     path: "",
   },
-  assetPrefix: "./",
+  assetPrefix: "./lab-next-website/",
 };

@@ -1,11 +1,10 @@
 import { getPagesUnderRoute } from "nextra/context";
 import { memo, useEffect, useRef, useState } from "react";
-import { Page } from './type';
 import MemberCard from './MemberCard';
 
 export default memo(() => {
     const backgroundImageRef = useRef(null);
-    const [teams, setTeams] = useState<{ [key: string]: Page[] }>({});
+    const [teams, setTeams] = useState({}); // <{ [key: string]: [] }>
 
     useEffect(() => {
         const teams = getPagesUnderRoute("/team");
@@ -97,7 +96,7 @@ export default memo(() => {
                                 </>
                             )}
                             <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-                                {teams[category].map((page: Page, idx: number) => (
+                                {teams[category].map((page, idx) => (
                                     <MemberCard
                                     key={idx}
                                     frontMatter={page?.frontMatter}

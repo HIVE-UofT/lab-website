@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { getPagesUnderRoute } from "nextra/context";
-import { Page } from "nextra";
-import Link from "next/link";
+// import Link from "next/link";
 
 export default () => {
-  const [projects, setProjects] = useState<Page[]>([]);
+  const [projects, setProjects] = useState([]);
   const elmRef = useRef(null);
   
   useEffect(() => {

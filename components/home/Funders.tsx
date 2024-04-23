@@ -15,10 +15,10 @@ export default () => {
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="max-w-xl mx-auto text-center">
                     <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                        Empowering Innovation - Together
+                    Thankful for Our Supporters!
                     </h3>
                     <p className="text-gray-600 mt-3">
-                        HIVE Lab is grateful for the support of our partners and collaborators. Their commitment to advancing health innovation fuels our research and empowers us to make a positive impact.                    </p>
+                    Our lab extends heartfelt thanks to our supporters and collaborators. With their trust, we advance important health research and make a real difference.                    </p>
                 </div>
                 <div className="mt-12 flex justify-center">
                     <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-6 md:gap-x-16 md:grid-cols-3 lg:grid-cols-4">

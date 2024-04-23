@@ -1,7 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  content: ['./{components,pages}/**/*.{mdx,tsx}', './theme.config.tsx'],
+  content: [
+    './{components,pages}/**/*.{md,mdx,tsx}', 
+    './theme.config.tsx',
+    './components/**/*.{js,jsx,ts,tsx,md,mdx}',
+ 
+    // Or if using `src` directory:
+    './src/**/*.{js,jsx,ts,tsx,md,mdx}'
+  ],
   theme: {
     extend: {
       animation: {

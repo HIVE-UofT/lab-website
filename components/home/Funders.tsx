@@ -1,7 +1,8 @@
 import React from "react";
+import { prefix } from "../utils/prefix";
 
 const LOGOS = [
-    {image:"/funders/nserc.png", size:"150px"},
+    {image:`${prefix}/funders/nserc.png`, size:"150px"},
     {image:"/funders/dsi.png", size:"150px"},
     {image:"/funders/dalla_lana.png", size:"150px"},
     {image:"/funders/ihpme.svg", size:"250px"},

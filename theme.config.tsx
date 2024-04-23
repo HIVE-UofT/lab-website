@@ -34,7 +34,7 @@ const config: DocsThemeConfig = {
           <footer className="bg-white">
             <div className="mx-auto max-w-screen-xl space-y-4 px-4 py-4 sm:px-6 lg:px-8">
               <div className="sm:flex sm:items-center sm:justify-between">
-                <AppLogo />
+                {/* <AppLogo /> */}
 
                 <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
                   <li>

@@ -1,14 +1,13 @@
 import React from "react";
-import { prefix } from "../utils/prefix";
 
 const LOGOS = [
-    {image:`${prefix}/funders/nserc.png`, size:"150px"},
-    {image:`${prefix}/funders/dsi.png`, size:"150px"},
-    {image:`${prefix}/funders/dalla_lana.png`, size:"150px"},
-    {image:`${prefix}/funders/ihpme.svg`, size:"250px"},
-    {image:`${prefix}/funders/ifp.png`, size:"150px"},
-    {image:`${prefix}/funders/diabetes_canada.png`, size:"150px"},
-    {image:`${prefix}/funders/unicef.png`, size:"150px"},
+    {image:`/funders/nserc.png`, size:"150px"},
+    {image:`/funders/dsi.png`, size:"150px"},
+    {image:`/funders/dalla_lana.png`, size:"150px"},
+    {image:`/funders/ihpme.svg`, size:"250px"},
+    {image:`/funders/ifp.png`, size:"150px"},
+    {image:`/funders/diabetes_canada.png`, size:"150px"},
+    {image:`/funders/unicef.png`, size:"150px"},
 ];
 export default () => {
     return (

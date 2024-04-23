@@ -5,7 +5,6 @@ const withNextra = nextra({
   themeConfig: "./theme.config.tsx",
   latex: true,
   defaultShowCopyCode: true,
-  basePath: './lab-next-website/',
 });
 
 export default {
@@ -14,7 +13,7 @@ export default {
   output: 'export',
   images: {
     loader: "akamai",
-    path: "./lab-next-website/",
+    path: "",
   },
   assetPrefix: "",
 };

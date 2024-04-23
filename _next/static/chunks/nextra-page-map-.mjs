@@ -299,7 +299,7 @@ export const pageMap = [{
       "role": "Research Assistant",
       "category": "C3_10_Alumni",
       "range": "Current: ",
-      "current_position": "",
+      "current_position": "[Deloitte](https://www2.deloitte.com/ca/en/pages/about-deloitte/articles/home.html)",
       "twitter": "https://twitter.com/shvetabhasker",
       "linkedin": "https://www.linkedin.com/in/shveta-bhasker",
       "google_scholar": "https://scholar.google.ca/citations?user=M0AxSdMAAAAJ&hl=en&oi=ao",

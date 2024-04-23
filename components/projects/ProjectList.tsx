@@ -44,11 +44,11 @@ export default () => {
   return (
     <section className="py-4" ref={elmRef}>
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-        <div className="max-w-xl mx-auto sm:text-center">
+        <div className="max-w-3xl mx-auto sm:text-center">
           <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-            Our Projects
+            HIVE Lab Research Themes
           </h3>
-          <p className="text-gray-600 mt-3">impactful projects...</p>
+          <p className="text-gray-600 mt-3">Explore our core themes, which showcase the scope of our AI research initiatives. As each project progresses, we will provide updates with detailed insights and demonstrations, and we look forward to your thoughts and feedback.</p>
         </div>
         <div className="mt-12">
           <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">

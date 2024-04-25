@@ -88,6 +88,70 @@ const config: DocsThemeConfig = {
 
     return View;
   },
+
+  // useNextSeoProps() {
+  //   return {
+  //     titleTemplate: '%s - Compendium of Federated Learning Resources'
+  //   }
+  // },
+
+  // <title>Introduction</title>
+  // <meta name="description" content="Brief description of your page content">
+  // <meta name="keywords" content="your, keywords, here">
+  // <meta name="author" content="Your Name">
+  //
+  // <!-- Open Graph Meta Tags (for social media sharing) -->
+  // https://ogp.me/
+  //
+  // <meta property="og:title" content="Your Page Title">
+  // <meta property="og:description" content="Brief description of your page content">
+  // <meta property="og:type" content="website">
+  // <meta property="og:url" content="https://www.yourwebsite.com">
+  // <meta property="og:image" content="https://www.yourwebsite.com/og-image.jpg">
+  // <!-- Twitter Meta Tags (for Twitter Cards) -->
+  // <meta name="twitter:card" content="summary_large_image">
+  // <meta name="twitter:title" content="Your Page Title">
+  // <meta name="twitter:site" content="@shuding_">
+  // <meta name="twitter:description" content="Brief description of your page content">
+  // <meta name="twitter:image" content="https://www.yourwebsite.com/twitter-card-image.jpg">
+  //
+  // <meta name="apple-mobile-web-app-title" content="app_tittle">
+  head: () => {
+    const { asPath, defaultLocale, locale } = useRouter()
+    const { frontMatter, title } = useConfig()
+    const domain = 'https://www.hivelab-uoft.ca/' // TODO: config app url
+    const url =
+      domain + (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
+
+    const app_title = frontMatter.title || title || 'HIVE lab @UofT'
+
+    let keywords = [];
+    if (frontMatter.keywords) {
+      keywords = frontMatter.keywords.split(',').map(keyword => keyword.trim());
+    }
+    // TODO: config default keywords
+    ['HIVE lab', 'UofT', 'AI'].forEach(keyword => {
+      if (!keywords.includes(keyword)) keywords.push(keyword);
+    });
+
+    const app_keywords = keywords.join(', ');
+    return (
+      <>
+        <meta name="apple-mobile-web-app-title" content={app_title} />
+        <meta name="author" content={frontMatter.author || 'HIVE lab @UofT'} />
+        <meta property="keywords" content={app_keywords} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={url} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={app_title} />
+        <meta httpEquiv="Content-Language" content="en" />
+        {/* TODO: ADD Favicons */}
+        {frontMatter.description && <meta name="twitter:description" content={frontMatter.description} />}
+        {frontMatter.image && <meta name="twitter:image" content={`${domain}${frontMatter.image}`} />}
+      </>
+    )
+  },
+  
 };
 
 export default config;

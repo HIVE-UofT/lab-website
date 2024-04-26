@@ -257,6 +257,20 @@ export const pageMap = [{
       "research_gate": null
     }
   }, {
+    name: "pardis_zahraei",
+    route: "/team/pardis_zahraei",
+    frontMatter: {
+      "title": "Pardis Sadat Zahraei",
+      "image": "/team/pardis.jpg",
+      "role": "Intern",
+      "category": "C2_50_Intern",
+      "date": "2024/04/26",
+      "linkedin": "https://www.linkedin.com/in/pardis-zahraei",
+      "google_scholar": "https://scholar.google.com/citations?hl=en&user=L_9-zNYAAAAJ",
+      "github": "https://github.com/pardissz",
+      "orcid": "https://orcid.org/0009-0000-8809-7422"
+    }
+  }, {
     name: "pourya_momtaz",
     route: "/team/pourya_momtaz",
     frontMatter: {

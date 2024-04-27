@@ -126,8 +126,10 @@ export const pageMap = [{
     frontMatter: {
       "title": "Aria Panchal",
       "image": "/team/aria.jpg",
-      "role": "Research Assistant",
-      "category": "C2_40_Research Assistant",
+      "role": "Research Assistant (Oct'23-April'24)",
+      "category": "C3_10_Alumni",
+      "range": "Current: ",
+      "current_position": "University of Toronto",
       "date": "2023/10/15",
       "twitter": null,
       "linkedin": null,

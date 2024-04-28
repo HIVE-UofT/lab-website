@@ -79,7 +79,7 @@ export default memo(() => {
                             Our Team at HIVE Lab
                         </h3>
                         <p className="mt-3">
-                            Our diverse experts specialize in AI for public health. Join us as we innovate in this critical domain, shaping the future of AI-driven public health.
+                            Our diverse experts specialize in AI, Computer Science, Software Engineering, Biostatistics, Information Visualization, Epidemiology, and Health Sciences. Join us as we innovate in this critical domain, shaping the future of AI-driven public health.
                         </p>
                     </div>
                 </div>

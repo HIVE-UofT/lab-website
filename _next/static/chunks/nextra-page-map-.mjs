@@ -329,7 +329,7 @@ export const pageMap = [{
     frontMatter: {
       "title": "Somayeh Amini",
       "image": "/team/somayeh.jpeg",
-      "role": "Practicum Student (Jan-Dec'2023)",
+      "role": "Practicum Student (Jan-Dec'23)",
       "category": "C3_10_Alumni",
       "range": "PostHIVE: ",
       "current_position": "[AstraZeneca](https://www.astrazeneca.com/)",

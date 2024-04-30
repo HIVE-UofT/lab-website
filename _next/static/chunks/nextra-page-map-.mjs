@@ -372,6 +372,23 @@ export const pageMap = [{
       "google_scholar": "https://scholar.google.com/citations?user=RLJVPG4AAAAJ&hl=en",
       "orcid": "https://orcid.org/signin"
     }
+  }, {
+    name: "ziqi_shu",
+    route: "/team/ziqi_shu",
+    frontMatter: {
+      "title": "Ziqi Shu",
+      "image": "/team/ziqi.jpeg",
+      "role": "Research Assistant (May-Dec'23)",
+      "category": "C3_10_Alumni",
+      "range": "PostHIVE: ",
+      "current_position": "Stanford University",
+      "date": "2023/09/01",
+      "twitter": null,
+      "github": "https://github.com/ziqishu",
+      "linkedin": "https://www.linkedin.com/in/ziqi-shu-b45a20216",
+      "google_scholar": null,
+      "orcid": null
+    }
   }]
 }, {
   name: "team",

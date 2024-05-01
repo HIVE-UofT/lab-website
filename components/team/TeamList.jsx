@@ -40,7 +40,7 @@ export default memo(() => {
                 if (a.value !== b.value) {
                     return a.value - b.value; // Sort by value if they are different
                 } else {
-                    // If values are same, sort by frontMatter.date
+                    // If values are the same, sort by frontMatter.date
                     return new Date(a.member?.frontMatter?.date).getTime() - new Date(b.member?.frontMatter?.date).getTime();
                 }
             });
@@ -95,7 +95,7 @@ export default memo(() => {
                                     <hr />
                                 </>
                             )}
-                            <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+                            <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 items-start">
                                 {teams[category].map((page, idx) => (
                                     <MemberCard
                                     key={idx}

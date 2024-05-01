@@ -39,7 +39,7 @@ const config: DocsThemeConfig = {
                 <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
                   <li>
                     <a
-                      href="#"
+                      href="https://github.com/HIVE-UofT"
                       rel="noreferrer"
                       target="_blank"
                       className="text-gray-700 transition hover:opacity-75"

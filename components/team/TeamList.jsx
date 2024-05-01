@@ -40,6 +40,9 @@ export default memo(() => {
                 if (a.value !== b.value) {
                     return a.value - b.value; // Sort by value if they are different
                 } else {
+                    if (a.member?.frontMatter?.range){
+                        return new Date(b.member?.frontMatter?.date).getTime() - new Date(a.member?.frontMatter?.date).getTime();
+                    }
                     // If values are the same, sort by frontMatter.date
                     return new Date(a.member?.frontMatter?.date).getTime() - new Date(b.member?.frontMatter?.date).getTime();
                 }

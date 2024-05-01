@@ -117,28 +117,35 @@ const config: DocsThemeConfig = {
   //
   // <meta name="apple-mobile-web-app-title" content="app_tittle">
   head: () => {
-    const { asPath, defaultLocale, locale } = useRouter()
-    const { frontMatter, title } = useConfig()
-    const domain = 'https://www.hivelab-uoft.ca/' // TODO: config app url
+    const { asPath, defaultLocale, locale } = useRouter();
+    const { frontMatter, title } = useConfig();
+    const domain = "https://www.hivelab-uoft.ca/"; // TODO: config app url
     const url =
-      domain + (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
+      domain + (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
 
-    const app_title = frontMatter.title || title || 'HIVE lab @UofT'
+    const app_title = frontMatter.title || title || "HIVE lab @UofT";
 
     let keywords = [];
+    
     if (frontMatter.keywords) {
-      keywords = frontMatter.keywords.split(',').map(keyword => keyword.trim());
+      keywords = frontMatter.keywords
+        .split(",")
+        .map((keyword) => keyword.trim());
     }
     // TODO: config default keywords
-    ['HIVE lab', 'UofT', 'AI'].forEach(keyword => {
+    ["HIVE lab", "UofT", "AI"].forEach((keyword) => {
       if (!keywords.includes(keyword)) keywords.push(keyword);
     });
 
-    const app_keywords = keywords.join(', ');
+    const app_keywords = keywords.join(", ");
+
+    const GA_TRACKING_ID = "G-CH35R4ZQXL";
+
     return (
       <>
+        <title>{app_title}</title>
         <meta name="apple-mobile-web-app-title" content={app_title} />
-        <meta name="author" content={frontMatter.author || 'HIVE lab @UofT'} />
+        <meta name="author" content={frontMatter.author || "HIVE lab @UofT"} />
         <meta property="keywords" content={app_keywords} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
@@ -146,10 +153,26 @@ const config: DocsThemeConfig = {
         <meta name="twitter:title" content={app_title} />
         <meta httpEquiv="Content-Language" content="en" />
         {/* TODO: ADD Favicons */}
-        {frontMatter.description && <meta name="twitter:description" content={frontMatter.description} />}
-        {frontMatter.image && <meta name="twitter:image" content={`${domain}${frontMatter.image}`} />}
+        {frontMatter.description && (
+          <meta name="twitter:description" content={frontMatter.description} />
+        )}
+        {frontMatter.image && (
+          <meta
+            name="twitter:image"
+            content={`${domain}${frontMatter.image}`}
+          />
+        )}
+
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <script id="google-tag-manager">
+          {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${GA_TRACKING_ID}');`}
+        </script>
       </>
-    )
+    );
   },
   
 };

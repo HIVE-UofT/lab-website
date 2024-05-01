@@ -130,7 +130,7 @@ export const pageMap = [{
       "category": "C3_10_Alumni",
       "range": "PostHIVE: ",
       "current_position": "University of Toronto",
-      "date": "2023/10/15",
+      "date": "2024/04/1",
       "twitter": null,
       "linkedin": null,
       "google_scholar": null,
@@ -223,6 +223,23 @@ export const pageMap = [{
       "website": "https://sites.google.com/view/kcsamsel",
       "orcid": "https://orcid.org/0000-0002-7901-2199",
       "research_gate": "https://www.researchgate.net/profile/Konrad-Samsel"
+    }
+  }, {
+    name: "mark_dayomi",
+    route: "/team/mark_dayomi",
+    frontMatter: {
+      "title": "Mark Dayomi",
+      "image": "/team/mark.png",
+      "role": "Research Assistant (May-Sep'23)",
+      "category": "C3_10_Alumni",
+      "range": "PostHIVE: ",
+      "current_position": "University of Toronto",
+      "date": "2023/09/01",
+      "twitter": null,
+      "github": null,
+      "linkedin": "https://www.linkedin.com/in/mark-dayomi-6955b7220/",
+      "google_scholar": "https://github.com/menamark",
+      "orcid": null
     }
   }, {
     name: "neil_seeman",
@@ -321,6 +338,7 @@ export const pageMap = [{
       "google_scholar": "https://scholar.google.ca/citations?user=M0AxSdMAAAAJ&hl=en&oi=ao",
       "github": null,
       "orcid": null,
+      "date": "2023/08/30",
       "research_gate": "https://www.researchgate.net/profile/Shveta-Bhasker"
     }
   }, {
@@ -382,7 +400,7 @@ export const pageMap = [{
       "category": "C3_10_Alumni",
       "range": "PostHIVE: ",
       "current_position": "Stanford University",
-      "date": "2023/09/01",
+      "date": "2024/01/01",
       "twitter": null,
       "github": "https://github.com/ziqishu",
       "linkedin": "https://www.linkedin.com/in/ziqi-shu-b45a20216",

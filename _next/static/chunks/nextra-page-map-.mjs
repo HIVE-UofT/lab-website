@@ -1,4 +1,6 @@
 import meta from "../../../pages/_meta.tsx";
+import projects_meta from "../../../pages/projects/_meta.tsx";
+import team_meta from "../../../pages/team/_meta.tsx";
 export const pageMap = [{
   data: meta
 }, {
@@ -26,6 +28,8 @@ export const pageMap = [{
   name: "projects",
   route: "/projects",
   children: [{
+    data: projects_meta
+  }, {
     name: "ai_for_enhanced_healthcare_services",
     route: "/projects/ai_for_enhanced_healthcare_services",
     frontMatter: {
@@ -104,6 +108,8 @@ export const pageMap = [{
   name: "team",
   route: "/team",
   children: [{
+    data: team_meta
+  }, {
     name: "amirhosein_rostami",
     route: "/team/amirhosein_rostami",
     frontMatter: {

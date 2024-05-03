@@ -163,6 +163,20 @@ export const pageMap = [{
       "research_gate": null
     }
   }, {
+    name: "davey_seeman",
+    route: "/team/davey_seeman",
+    frontMatter: {
+      "title": "Davey Seeman",
+      "image": "/team/davey.png",
+      "role": "Research Assistant",
+      "category": "C2_40_Research Assistant",
+      "date": "2024/05/01",
+      "linkedin": "https://www.linkedin.com/in/davey-seeman/",
+      "google_scholar": null,
+      "github": "https://github.com/Davey-Seemanz",
+      "orcid": null
+    }
+  }, {
     name: "gabriel_you",
     route: "/team/gabriel_you",
     frontMatter: {

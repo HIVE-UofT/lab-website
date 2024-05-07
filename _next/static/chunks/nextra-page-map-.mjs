@@ -396,6 +396,23 @@ export const pageMap = [{
       "research_gate": "https://www.researchgate.net/profile/Yacine-Marouf-3"
     }
   }, {
+    name: "yong_chen",
+    route: "/team/yong_chen",
+    frontMatter: {
+      "title": "Yong Chen",
+      "image": "/team/yong.png",
+      "role": "Research Assistant (May-Dec'23)",
+      "category": "C3_10_Alumni",
+      "range": "PostHIVE: ",
+      "current_position": "University of Toronto",
+      "date": "2024/01/01",
+      "twitter": null,
+      "github": "https://github.com/chenyo34",
+      "linkedin": "https://www.linkedin.com/in/yong-chen-0058561b9/",
+      "google_scholar": null,
+      "orcid": null
+    }
+  }, {
     name: "zahra_shakeri",
     route: "/team/zahra_shakeri",
     frontMatter: {

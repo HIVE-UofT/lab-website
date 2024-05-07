@@ -21,7 +21,7 @@ export default function SliderControlsInside() {
                             <Hive className='w-96' />
                         </p>
                         <p className="mt-3 text-gray-600">
-                            The Health Informatics, Visualization, and Equity (HIVE) Lab in the Institute of Health Policy, Management and Evaluation, Dalla Lana School of Public Health at the University of Toronto is a group of data scientists, epidemiologists, and software engineers working at the interface of Machine Learning, AI, Information Visualization, and Health Informatics. As a research group, we are passionate about integrating data across different sources and scales to develop novel methods and open source tools to promote health at individual and population levels and to foster national and international collaborations to advance the quest for health equity.
+                            The Health Informatics, Visualization, and Equity (HIVE) Lab, established in October 2023 at the Institute of Health Policy, Management and Evaluation, Dalla Lana School of Public Health at the University of Toronto, is a collective of data scientists, epidemiologists, and software engineers. This group operates at the intersection of Machine Learning, AI, Information Visualization, and Health Informatics. We are dedicated to integrating data from diverse sources and scales, developing innovative methods and open-source tools to enhance health at both individual and population levels. Our mission includes fostering national and international collaborations to propel the pursuit of health equity.
                         </p>
 
                     </div>

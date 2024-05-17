@@ -177,6 +177,23 @@ export const pageMap = [{
       "orcid": null
     }
   }, {
+    name: "erica_zhang",
+    route: "/team/erica_zhang",
+    frontMatter: {
+      "title": "Qian(Erica) Zhang",
+      "image": "/team/ericazhang.jpg",
+      "role": "Research Assistant",
+      "category": "C2_40_Research Assistant",
+      "date": "2024/05/14",
+      "twitter": null,
+      "linkedin": null,
+      "google_scholar": null,
+      "github": null,
+      "website": null,
+      "orcid": null,
+      "research_gate": null
+    }
+  }, {
     name: "gabriel_you",
     route: "/team/gabriel_you",
     frontMatter: {

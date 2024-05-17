@@ -350,7 +350,7 @@ export const pageMap = [{
       "title": "Ryan Rezai",
       "image": "/team/ryanrezai.png",
       "role": "Research Assistant",
-      "category": "C2_50_Research Assistant",
+      "category": "C2_40_Research Assistant",
       "date": "2024/05/15",
       "twitter": null,
       "linkedin": "https://www.linkedin.com/in/ryanrezai/",

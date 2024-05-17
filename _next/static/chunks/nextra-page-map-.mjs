@@ -344,6 +344,23 @@ export const pageMap = [{
       "research_gate": "https://www.researchgate.net/profile/Priyonto-Saha"
     }
   }, {
+    name: "ryan_rezai",
+    route: "/team/ryan_rezai",
+    frontMatter: {
+      "title": "Ryan Rezai",
+      "image": "/team/ryanrezai.png",
+      "role": "Research Assistant",
+      "category": "C2_50_Research Assistant",
+      "date": "2024/05/15",
+      "twitter": null,
+      "linkedin": "https://www.linkedin.com/in/ryanrezai/",
+      "google_scholar": null,
+      "github": null,
+      "website": "https://ryanrez.ai/",
+      "orcid": null,
+      "research_gate": null
+    }
+  }, {
     name: "shveta_bhasker",
     route: "/team/shveta_bhasker",
     frontMatter: {

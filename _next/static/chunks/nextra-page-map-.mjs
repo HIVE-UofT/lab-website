@@ -257,7 +257,7 @@ export const pageMap = [{
       "title": "Konrad Samsel",
       "image": "/team/konrad.jpeg",
       "role": "Project Manager",
-      "category": "C2_5_Project Manager",
+      "category": "C1_30_Project Manager",
       "date": "2024/04/22",
       "twitter": null,
       "linkedin": "https://www.linkedin.com/in/konradsamsel/",

@@ -423,6 +423,25 @@ export const pageMap = [{
       "orcid": null
     }
   }, {
+    name: "tony_",
+    route: "/team/tony_",
+    frontMatter: {
+      "title": "Shengjie Zou",
+      "image": "/team/tony.jpeg",
+      "role": "Software Engineer (May-Aug'23)",
+      "category": "C3_10_Alumni",
+      "range": "PostHIVE: ",
+      "current_position": "TBA",
+      "date": "2023/09/01",
+      "twitter": null,
+      "linkedin": "https://www.linkedin.com/in/shengjie-zou-413272248/",
+      "google_scholar": "https://scholar.google.fr/scholar?hl=en&as_sdt=0%2C5&q=Design+and+research+of+VR+interactive+game+based+on+mirror+elements&btnG=",
+      "github": "https://github.com/tonyz961",
+      "website": null,
+      "orcid": null,
+      "research_gate": null
+    }
+  }, {
     name: "yacine_marouf",
     route: "/team/yacine_marouf",
     frontMatter: {

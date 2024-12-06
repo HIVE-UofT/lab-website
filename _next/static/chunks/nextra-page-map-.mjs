@@ -146,25 +146,6 @@ export const pageMap = [{
       "research_gate": null
     }
   }, {
-    name: "aryan_sadeghi",
-    route: "/team/aryan_sadeghi",
-    frontMatter: {
-      "title": "Aryan Sadeghi",
-      "image": "/team/aryan.jpeg",
-      "role": "Software Engineer (June'23-Apr'24)",
-      "category": "C3_10_Alumni",
-      "range": "PostHIVE: ",
-      "current_position": "University of Toronto",
-      "date": "2024/04/01",
-      "twitter": null,
-      "linkedin": "https://www.linkedin.com/in/aryan-sadeghi-269b82b0/",
-      "google_scholar": null,
-      "github": null,
-      "website": null,
-      "orcid": null,
-      "research_gate": null
-    }
-  }, {
     name: "davey_seeman",
     route: "/team/davey_seeman",
     frontMatter: {

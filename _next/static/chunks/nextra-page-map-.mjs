@@ -266,6 +266,24 @@ export const pageMap = [{
       "orcid": null
     }
   }, {
+    name: "minh_le",
+    route: "/team/minh_le",
+    frontMatter: {
+      "title": "Minh Le",
+      "description": "Minh Le",
+      "author": "Minh Le",
+      "keywords": "Minh Le",
+      "image": "/team/minh_le.png",
+      "role": "Research Assistant",
+      "category": "C2_40_Research Assistant",
+      "date": "2025/05/12",
+      "twitter": null,
+      "github": "https://github.com/nm-le",
+      "linkedin": "https://www.linkedin.com/in/nm-le/",
+      "google_scholar": null,
+      "orcid": "https://orcid.org/0009-0003-1000-5657"
+    }
+  }, {
     name: "neil_seeman",
     route: "/team/neil_seeman",
     frontMatter: {

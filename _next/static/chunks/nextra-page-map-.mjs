@@ -273,7 +273,7 @@ export const pageMap = [{
       "description": "Minh Le",
       "author": "Minh Le",
       "keywords": "Minh Le",
-      "image": "/team/minh_le.png",
+      "image": "/team/minh.jpg",
       "role": "Research Assistant",
       "category": "C2_40_Research Assistant",
       "date": "2025/05/12",

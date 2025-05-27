@@ -4,7 +4,7 @@ const LOGOS = [
     {image:`/funders/nserc.png`, size:"150px"},
     {image:`/funders/dsi.png`, size:"120px"},
     {image:`/funders/dalla_lana.png`, size:"150px"},
-    {image:`/funders/ihpme.svg`, size:"850px"},
+    {image:`/funders/ihpme.png`, size:"250px"},
     {image:`/funders/ifp.png`, size:"150px"},
     {image:`/funders/diabetes_canada.png`, size:"120px"},
     {image:`/funders/unicef.png`, size:"150px"},

@@ -127,6 +127,24 @@ export const pageMap = [{
       "research_gate": null
     }
   }, {
+    name: "amirhossein_haji",
+    route: "/team/amirhossein_haji",
+    frontMatter: {
+      "title": "AmirHossein Haji Mohammad Rezaei",
+      "description": "AmirHossein Haji Mohammad Rezaei Bio",
+      "author": "AmirHossein Haji Mohammad Rezaei",
+      "keywords": "AmirHossein Haji Mohammad Rezaei",
+      "image": "/team/amirhossein_haji.jpg",
+      "role": "MSc Student",
+      "category": "C2_35_MSc Student",
+      "date": "2025/05/27",
+      "twitter": null,
+      "github": "https://github.com/amir-haji",
+      "linkedin": "https://www.linkedin.com/in/amir-hosein-haji-mohammad-rezaie-843209215/",
+      "google_scholar": "https://scholar.google.com/citations?user=svHSKO4AAAAJ",
+      "orcid": null
+    }
+  }, {
     name: "aria_panchal",
     route: "/team/aria_panchal",
     frontMatter: {
@@ -168,7 +186,9 @@ export const pageMap = [{
       "title": "Qian(Erica) Zhang",
       "image": "/team/ericazhang.jpg",
       "role": "Research Assistant",
-      "category": "C2_40_Research Assistant",
+      "category": "C3_40_Alumni",
+      "range": "PostHIVE: ",
+      "current_position": "-",
       "date": "2024/05/14",
       "twitter": null,
       "linkedin": null,
@@ -266,6 +286,24 @@ export const pageMap = [{
       "orcid": null
     }
   }, {
+    name: "marva_sharifi",
+    route: "/team/marva_sharifi",
+    frontMatter: {
+      "title": "Marwa Sharifi",
+      "description": "Marwa Sharifi Bio",
+      "author": "Marwa Sharifi",
+      "keywords": "Marwa Sharifi",
+      "image": "/team/marva.jpeg",
+      "role": "Research Assistant",
+      "category": "C2_40_Research Assistant",
+      "date": "2025/05/27",
+      "twitter": null,
+      "github": null,
+      "linkedin": "https://www.linkedin.com/in/marwa-s-b347b423a/",
+      "google_scholar": null,
+      "orcid": null
+    }
+  }, {
     name: "minh_le",
     route: "/team/minh_le",
     frontMatter: {
@@ -324,7 +362,9 @@ export const pageMap = [{
       "title": "Pardis Sadat Zahraei",
       "image": "/team/pardis.jpg",
       "role": "Intern",
-      "category": "C2_50_Intern",
+      "category": "C3_30_Alumni",
+      "range": "PostHIVE: ",
+      "current_position": "-",
       "date": "2024/04/26",
       "linkedin": "https://www.linkedin.com/in/pardis-zahraei",
       "google_scholar": "https://scholar.google.com/citations?hl=en&user=L_9-zNYAAAAJ",
@@ -374,9 +414,14 @@ export const pageMap = [{
     route: "/team/ryan_rezai",
     frontMatter: {
       "title": "Ryan Rezai",
+      "description": "Ryan Rezai",
+      "author": "Ryan Rezai",
+      "keywords": "Ryan Rezai",
       "image": "/team/ryanrezai.png",
-      "role": "Research Assistant",
-      "category": "C2_40_Research Assistant",
+      "role": "Research Assistant (Jun'24-Sep'24)",
+      "category": "C3_20_Alumni",
+      "range": "PostHIVE: ",
+      "current_position": "-",
       "date": "2024/05/15",
       "twitter": null,
       "linkedin": "https://www.linkedin.com/in/ryanrezai/",

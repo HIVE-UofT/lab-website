@@ -2,12 +2,13 @@ import React from "react";
 
 const LOGOS = [
     {image:`/funders/nserc.png`, size:"150px"},
-    {image:`/funders/dsi.png`, size:"150px"},
+    {image:`/funders/dsi.png`, size:"120px"},
     {image:`/funders/dalla_lana.png`, size:"150px"},
-    {image:`/funders/ihpme.svg`, size:"250px"},
+    {image:`/funders/ihpme.svg`, size:"850px"},
     {image:`/funders/ifp.png`, size:"150px"},
-    {image:`/funders/diabetes_canada.png`, size:"150px"},
+    {image:`/funders/diabetes_canada.png`, size:"120px"},
     {image:`/funders/unicef.png`, size:"150px"},
+    {image:`/funders/transform_HF.png`, size:"210px"},
 ];
 export default () => {
     return (

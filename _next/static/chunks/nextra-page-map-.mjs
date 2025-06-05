@@ -170,6 +170,7 @@ export const pageMap = [{
       "title": "Davey Seeman",
       "image": "/team/davey.png",
       "role": "Research Assistant",
+      "category": "C2_40_Research Assistant",
       "date": "2025/06/10",
       "linkedin": "https://www.linkedin.com/in/davey-seeman/",
       "google_scholar": null,

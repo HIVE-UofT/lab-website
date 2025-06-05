@@ -169,11 +169,8 @@ export const pageMap = [{
     frontMatter: {
       "title": "Davey Seeman",
       "image": "/team/davey.png",
-      "role": "Research Assistant (Jun-Sep'24)",
-      "category": "C3_10_Alumni",
-      "range": "PostHIVE: ",
-      "current_position": "Cornell University",
-      "date": "2024/08/31",
+      "role": "Research Assistant",
+      "date": "2025/06/10",
       "linkedin": "https://www.linkedin.com/in/davey-seeman/",
       "google_scholar": null,
       "github": "https://github.com/Davey-Seemanz",

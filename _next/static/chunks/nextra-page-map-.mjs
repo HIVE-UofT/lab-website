@@ -410,6 +410,25 @@ export const pageMap = [{
       "research_gate": "https://www.researchgate.net/profile/Priyonto-Saha"
     }
   }, {
+    name: "rama_mohammed_alyoubi",
+    route: "/team/rama_mohammed_alyoubi",
+    frontMatter: {
+      "title": "Rama Mohammed Alyoubi",
+      "author": "Rama Alyoubi",
+      "keywords": "AI, LLMs, Generative AI, Data Governance, Optimization",
+      "image": "/team/rama_alyoubi.jpg",
+      "role": "Research Assistant",
+      "category": "C2_Interns",
+      "date": "2025/06/27",
+      "twitter": "https://x.com/Rama_Alyoubi",
+      "linkedin": "https://www.linkedin.com/in/rama-alyoubi/",
+      "google_scholar": "https://scholar.google.ca/citations?hl=en&user=a3T9bHUAAAAJ",
+      "github": "https://github.com/Rama-Alyoubi",
+      "website": null,
+      "orcid": "https://orcid.org/0009-0009-8445-0511",
+      "research_gate": null
+    }
+  }, {
     name: "ryan_rezai",
     route: "/team/ryan_rezai",
     frontMatter: {

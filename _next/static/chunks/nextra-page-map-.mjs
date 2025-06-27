@@ -414,6 +414,7 @@ export const pageMap = [{
     route: "/team/rama_mohammed_alyoubi",
     frontMatter: {
       "title": "Rama Mohammed Alyoubi",
+      "description": "Holds a degree in Artificial Intelligence and currently works as a Research Assistant at HIVE Lab, contributing to a health equity project using NLP to analyze patient experience data from 45 Ontario hospitals. Previously gained experience in data and AI governance at the Saudi Data and Artificial Intelligence Authority (SDAIA)",
       "author": "Rama Alyoubi",
       "keywords": "AI, LLMs, Generative AI, Data Governance, Optimization",
       "image": "/team/rama_alyoubi.jpg",

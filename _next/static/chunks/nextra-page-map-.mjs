@@ -168,7 +168,7 @@ export const pageMap = [{
     route: "/team/chris_dharma",
     frontMatter: {
       "title": "Chris Dharma",
-      "description": "Brief description of your page content",
+      "description": "Chris Dharma is a postdoctoral fellow at the University of Toronto's Data Science Institute, specializing in mental health, AI, and applied biostatistics. His research advances generative AI and NLP to promote health equity across diverse communities.",
       "author": "Chris Dharma",
       "keywords": "mental health, AI, NLP, generative AI, statistics, sexuality, health services",
       "image": "/team/chris_dharma.jpg",

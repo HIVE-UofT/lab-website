@@ -164,6 +164,23 @@ export const pageMap = [{
       "research_gate": null
     }
   }, {
+    name: "chris_dharma",
+    route: "/team/chris_dharma",
+    frontMatter: {
+      "title": "Chris Dharma",
+      "description": "Brief description of your page content",
+      "author": "Chris Dharma",
+      "keywords": "mental health, AI, NLP, generative AI, statistics, sexuality, health services",
+      "image": "/team/chris_dharma.jpg",
+      "role": "Postdoctoral fellow",
+      "category": "C2_10_Postdoctoral fellow",
+      "date": "2025/07/01",
+      "github": "https://github.com/chrisdharma",
+      "linkedin": "https://www.linkedin.com/in/christoffer-dharma-18143929/",
+      "google_scholar": "https://scholar.google.ca/citations?user=ceDFx9oAAAAJ&hl=en",
+      "orcid": "https://orcid.org/0000-0002-5223-5755"
+    }
+  }, {
     name: "davey_seeman",
     route: "/team/davey_seeman",
     frontMatter: {
@@ -343,6 +360,9 @@ export const pageMap = [{
     route: "/team/omid_jafarinezhad",
     frontMatter: {
       "title": "Omid Jafarinezhad",
+      "description": "Omid Jafarinezhad is a PhD student in Health Informatics at the University of Toronto with extensive experience in software engineering, exploring the intersection of healthcare, technology, and data-driven innovation.",
+      "author": "Omid Jafarinezhad",
+      "keywords": "Omid Jafarinezhad, Health Informatics, PhD student, University of Toronto, software engineering, healthcare technology, data-intensive applications, AI, NLP, generative AI, machine learning, research",
       "image": "/team/omid.png",
       "role": "PhD Student",
       "category": "C2_20_PhD Student",

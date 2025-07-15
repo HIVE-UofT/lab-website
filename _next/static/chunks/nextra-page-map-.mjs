@@ -318,7 +318,7 @@ export const pageMap = [{
       "category": "C2_40_Research Assistant",
       "date": "2025/07/15",
       "twitter": null,
-      "linkedin": "www.linkedin.com/in/kynthiaravikumar",
+      "linkedin": "https://www.linkedin.com/in/kynthiaravikumar/",
       "google_scholar": null,
       "github": null,
       "website": null,

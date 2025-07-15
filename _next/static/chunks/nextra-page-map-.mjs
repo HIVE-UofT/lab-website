@@ -164,6 +164,26 @@ export const pageMap = [{
       "research_gate": null
     }
   }, {
+    name: "aseel_bahakim",
+    route: "/team/aseel_bahakim",
+    frontMatter: {
+      "title": "Aseel Bahakim",
+      "description": "Aseel Bahakim is a Computer Science graduate from King Abdulaziz University and an AI intern at KAUST. At HIVE Lab, she works on sycophancy and bias in language models. Her interests include responsible AI, governance, and secure system design, with past projects in UAV-based solar fault detection and drowsiness monitoring.",
+      "author": "Aseel Bahakim",
+      "keywords": "AI, CV, LLM, NLP, Governance, Security",
+      "image": "/team/aseel_bahakim.png",
+      "role": "Research Assistant",
+      "category": "C2_40_Research Assistant",
+      "date": "2025/07/15",
+      "twitter": null,
+      "linkedin": "https://www.linkedin.com/in/abahakeem/",
+      "google_scholar": null,
+      "github": "https://github.com/aseelbahakeem",
+      "website": null,
+      "orcid": "https://orcid.org/0009-0009-5159-7605",
+      "research_gate": null
+    }
+  }, {
     name: "chris_dharma",
     route: "/team/chris_dharma",
     frontMatter: {
@@ -284,6 +304,26 @@ export const pageMap = [{
       "website": "https://sites.google.com/view/kcsamsel",
       "orcid": "https://orcid.org/0000-0002-7901-2199",
       "research_gate": "https://www.researchgate.net/profile/Konrad-Samsel"
+    }
+  }, {
+    name: "kynthia_ravikumar",
+    route: "/team/kynthia_ravikumar",
+    frontMatter: {
+      "title": "Kynthia Ravikumar",
+      "description": "Kynthia Ravikumar is a fifth-year medical student and Global Health graduate from Imperial College London. As a Research Assistant at HIVE Lab, she studies sycophancy in large language models and its impact on clinical safety. Her work focuses on the real-world use of AI in healthcare, particularly its effects on communication, power dynamics, and the doctor-patient relationship. She has led projects in rural India, contributed to health policy, and founded a global health think tank, Polygeia Imperial.",
+      "author": "Kynthia Ravikumar",
+      "keywords": "AI in healthcare, LLM sycophancy, clinical safety, doctor-patient communication, women's health, community health, ethical AI, HIVE Lab",
+      "image": "/team/kynthia_ravikumar.jpeg",
+      "role": "Research Assistant",
+      "category": "C2_40_Research Assistant",
+      "date": "2025/07/15",
+      "twitter": null,
+      "linkedin": "www.linkedin.com/in/kynthiaravikumar",
+      "google_scholar": null,
+      "github": null,
+      "website": null,
+      "orcid": null,
+      "research_gate": null
     }
   }, {
     name: "mark_dayomi",

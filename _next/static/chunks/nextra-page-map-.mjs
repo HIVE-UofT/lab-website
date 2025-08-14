@@ -110,23 +110,6 @@ export const pageMap = [{
   children: [{
     data: team_meta
   }, {
-    name: "amirhosein_rostami",
-    route: "/team/amirhosein_rostami",
-    frontMatter: {
-      "title": "AmirHosein Rostami",
-      "image": "/team/amir.jpg",
-      "role": "MSc Student",
-      "category": "C2_30_MSc Student",
-      "date": "2024/05/1",
-      "twitter": "https://twitter.com/AHReccese",
-      "linkedin": "https://www.linkedin.com/in/amirhosein-rostami-099b09158/",
-      "google_scholar": null,
-      "github": "https://github.com/AHReccese",
-      "website": null,
-      "orcid": null,
-      "research_gate": null
-    }
-  }, {
     name: "amirhossein_haji",
     route: "/team/amirhossein_haji",
     frontMatter: {

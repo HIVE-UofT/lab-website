@@ -110,6 +110,23 @@ export const pageMap = [{
   children: [{
     data: team_meta
   }, {
+    name: "amirhosein_rostami",
+    route: "/team/amirhosein_rostami",
+    frontMatter: {
+      "title": "AmirHosein Rostami",
+      "image": "/team/amir.jpg",
+      "role": "Research Assistant",
+      "category": "C2_40_Research Assistant",
+      "date": "2023/01/1",
+      "twitter": "https://twitter.com/AHReccese",
+      "linkedin": "https://www.linkedin.com/in/amirhosein-rostami-099b09158/",
+      "google_scholar": null,
+      "github": "https://github.com/AHReccese",
+      "website": null,
+      "orcid": null,
+      "research_gate": null
+    }
+  }, {
     name: "amirhossein_haji",
     route: "/team/amirhossein_haji",
     frontMatter: {
@@ -250,23 +267,6 @@ export const pageMap = [{
       "linkedin": "https://www.linkedin.com/in/juan-andres-medina-286604191?trk=contact-info",
       "google_scholar": null,
       "github": "https://github.com/juan-medinaf",
-      "website": null,
-      "orcid": null,
-      "research_gate": null
-    }
-  }, {
-    name: "kamyar_kazari",
-    route: "/team/kamyar_kazari",
-    frontMatter: {
-      "title": "Kamyar Kazari",
-      "image": "/team/kamikazari.jpeg",
-      "role": "MSc Student",
-      "category": "C2_30_MSc Student",
-      "date": "2023/05/10",
-      "twitter": null,
-      "linkedin": "https://www.linkedin.com/in/kamyar-kazari-1839a321a",
-      "google_scholar": null,
-      "github": "https://github.com/kmykz",
       "website": null,
       "orcid": null,
       "research_gate": null

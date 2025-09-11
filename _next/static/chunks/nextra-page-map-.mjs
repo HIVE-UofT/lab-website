@@ -115,9 +115,9 @@ export const pageMap = [{
     frontMatter: {
       "title": "AmirHosein Rostami",
       "image": "/team/amir.jpg",
-      "role": "Research Assistant",
-      "category": "C2_40_Research Assistant",
-      "date": "2023/01/1",
+      "role": "MSc Student",
+      "category": "C2_30_MSc Student",
+      "date": "2024/05/1",
       "twitter": "https://twitter.com/AHReccese",
       "linkedin": "https://www.linkedin.com/in/amirhosein-rostami-099b09158/",
       "google_scholar": null,

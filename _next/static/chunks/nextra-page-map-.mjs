@@ -274,31 +274,14 @@ export const pageMap = [{
       "research_gate": null
     }
   }, {
-    name: "konrad_samsel_phd",
-    route: "/team/konrad_samsel_phd",
-    frontMatter: {
-      "title": "Konrad Samsel",
-      "image": "/team/konrad.jpeg",
-      "role": "PhD Student",
-      "category": "C2_20_PhD Student",
-      "date": "2025/09/01",
-      "twitter": null,
-      "linkedin": "https://www.linkedin.com/in/konradsamsel/",
-      "google_scholar": "https://scholar.google.com/citations?user=mLa26ioAAAAJ&hl=en",
-      "github": "https://github.com/konradVEH",
-      "website": "https://sites.google.com/view/kcsamsel",
-      "orcid": "https://orcid.org/0000-0002-7901-2199",
-      "research_gate": "https://www.researchgate.net/profile/Konrad-Samsel"
-    }
-  }, {
     name: "konrad_samsel",
     route: "/team/konrad_samsel",
     frontMatter: {
       "title": "Konrad Samsel",
       "image": "/team/konrad.jpeg",
-      "role": "Project Manager",
-      "category": "C1_30_Project Manager",
-      "date": "2024/04/01",
+      "role": "PhD Student/Project Manager",
+      "category": "C2_20_PhD Student",
+      "date": "2025/09/01",
       "twitter": null,
       "linkedin": "https://www.linkedin.com/in/konradsamsel/",
       "google_scholar": "https://scholar.google.com/citations?user=mLa26ioAAAAJ&hl=en",

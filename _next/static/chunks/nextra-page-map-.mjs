@@ -255,6 +255,26 @@ export const pageMap = [{
       "research_gate": null
     }
   }, {
+    name: "hemn_khdr",
+    route: "/team/hemn_khdr",
+    frontMatter: {
+      "title": "Hemn Khdr",
+      "description": "Hemn Khdr is a PhD student in Health Informatics at the University of Toronto.",
+      "author": "OHemn Khdr",
+      "keywords": "Hemn Khdr, Health Informatics, PhD student, University of Toronto, software engineering, healthcare technology, data-intensive applications, AI, NLP, generative AI, machine learning, research",
+      "image": "/team/hemn.jpeg",
+      "role": "PhD Student",
+      "category": "C2_20_PhD Student",
+      "date": "2025/09/01",
+      "twitter": null,
+      "linkedin": null,
+      "google_scholar": null,
+      "github": null,
+      "website": null,
+      "orcid": null,
+      "research_gate": null
+    }
+  }, {
     name: "juan_medina",
     route: "/team/juan_medina",
     frontMatter: {

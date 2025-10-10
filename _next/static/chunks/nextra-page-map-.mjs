@@ -22,12 +22,10 @@ export const pageMap = [{
     frontMatter: {
       "date": "2025/01/23",
       "title": "Beyond the Algorithm: Human Factors at the Heart of AI in Healthcare",
-      "funded_by": ["Your Name", "Your Name2"],
-      "status": "upcoming",
-      "type2": "seminar",
-      "image": "/events/Beyond-the-Algorithm.jpg",
       "description": "Come join us for an exciting event at the Data Sciences Institute on November 4th (4:30PM), where we will discuss the important role of human factors in the development and implementation of artificial intelligence in healthcare.",
-      "collaborators": [""],
+      "status": "upcoming",
+      "type": "seminar",
+      "image": "/events/Beyond-the-Algorithm.jpg",
       "lang": "en"
     }
   }]

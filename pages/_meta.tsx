@@ -42,6 +42,10 @@ export default {
     title: "Publications",
     // type: "page"
   },
+   "events": {
+    title: "Events",
+    // type: "page"
+  },
   "contact": {
     title: "Contact",
     // type: "page"

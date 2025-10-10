@@ -1,4 +1,5 @@
 import meta from "../../../pages/_meta.tsx";
+import events_meta from "../../../pages/events/_meta.tsx";
 import projects_meta from "../../../pages/projects/_meta.tsx";
 import team_meta from "../../../pages/team/_meta.tsx";
 export const pageMap = [{
@@ -9,6 +10,33 @@ export const pageMap = [{
   frontMatter: {
     "date": "2024/01/25",
     "sidebarTitle": "Contact"
+  }
+}, {
+  name: "events",
+  route: "/events",
+  children: [{
+    data: events_meta
+  }, {
+    name: "e2025_oct_Beyond-The-Algorithm-Event",
+    route: "/events/e2025_oct_Beyond-The-Algorithm-Event",
+    frontMatter: {
+      "date": "2025/01/23",
+      "title": "Beyond the Algorithm: Human Factors at the Heart of AI in Healthcare",
+      "funded_by": ["Your Name", "Your Name2"],
+      "status": "upcoming",
+      "type2": "seminar",
+      "image": "/events/Beyond-the-Algorithm.png",
+      "story": "Come join us for an exciting event at the Data Sciences Institute on November 4th (4:30PM), where we will discuss the important role of human factors in the development and implementation of artificial intelligence in healthcare.",
+      "collaborators": [""],
+      "lang": "en"
+    }
+  }]
+}, {
+  name: "events",
+  route: "/events",
+  frontMatter: {
+    "date": "2024/01/25",
+    "sidebarTitle": "Events"
   }
 }, {
   name: "index",

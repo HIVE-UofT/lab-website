@@ -68,7 +68,7 @@ export default () => {
                       {page.frontMatter?.title}
                     </h4>
                     <p className="text-[#35538E] text-lg leading-relaxed">
-                      {page.frontMatter?.story}
+                      {page.frontMatter?.description}
                     </p>
                   </div>
                 </div>

@@ -26,7 +26,7 @@ export const pageMap = [{
       "status": "upcoming",
       "type2": "seminar",
       "image": "/events/Beyond-the-Algorithm.jpg",
-      "story": "Come join us for an exciting event at the Data Sciences Institute on November 4th (4:30PM), where we will discuss the important role of human factors in the development and implementation of artificial intelligence in healthcare.",
+      "description": "Come join us for an exciting event at the Data Sciences Institute on November 4th (4:30PM), where we will discuss the important role of human factors in the development and implementation of artificial intelligence in healthcare.",
       "collaborators": [""],
       "lang": "en"
     }

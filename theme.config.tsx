@@ -140,7 +140,7 @@ const config: DocsThemeConfig = {
     const app_keywords = keywords.join(", ");
 
     const GA_TRACKING_ID = "G-CH35R4ZQXL";
-
+    const description = frontMatter.description || "HIVE lab @UofT";
     return (
       <>
         <title>{app_title}</title>
@@ -152,10 +152,8 @@ const config: DocsThemeConfig = {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={app_title} />
         <meta httpEquiv="Content-Language" content="en" />
-        {/* TODO: ADD Favicons */}
-        {frontMatter.description && (
-          <meta name="twitter:description" content={frontMatter.description} />
-        )}
+        <meta name="description" content={description} />
+        <meta name="twitter:description" content={description} />
         {frontMatter.image && (
           <meta
             name="twitter:image"

@@ -322,7 +322,7 @@ export const pageMap = [{
     route: "/team/javier_ledo",
     frontMatter: {
       "title": "Javier Mencia Ledo",
-      "image": "/team/team_member.jpg",
+      "image": "/team/javier.png",
       "role": "MSc Student",
       "category": "C2_30_MSc Student",
       "date": "2025/10/1",

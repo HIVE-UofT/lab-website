@@ -318,6 +318,23 @@ export const pageMap = [{
       "research_gate": null
     }
   }, {
+    name: "javier_ledo",
+    route: "/team/javier_ledo",
+    frontMatter: {
+      "title": "Javier Mencia Ledo",
+      "image": "/team/team_member.jpg",
+      "role": "MSc Student",
+      "category": "C2_30_MSc Student",
+      "date": "2025/10/1",
+      "twitter": null,
+      "linkedin": "https://www.linkedin.com/in/javier-mencia-ledo/",
+      "google_scholar": null,
+      "github": "https://github.com/javmencia",
+      "website": null,
+      "orcid": "https://orcid.org/0009-0009-5604-5922",
+      "research_gate": null
+    }
+  }, {
     name: "juan_medina",
     route: "/team/juan_medina",
     frontMatter: {

@@ -434,7 +434,7 @@ export const pageMap = [{
     frontMatter: {
       "title": "Neil Seeman",
       "image": "/team/nseeman.jpg",
-      "role": "Knowledge Translation Advisor",
+      "role": "Mary and Philip Seeman Lead in Knowledge Transfer",
       "category": "C1_20_Knowledge Translation Advisor",
       "date": "2024/01/23",
       "twitter": null,

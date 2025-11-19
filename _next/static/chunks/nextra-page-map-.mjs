@@ -262,6 +262,23 @@ export const pageMap = [{
       "research_gate": null
     }
   }, {
+    name: "fang_sheng",
+    route: "/team/fang_sheng",
+    frontMatter: {
+      "title": "Fang Sheng",
+      "image": "/team/fang_sheng.jpg",
+      "role": "Research Assistant",
+      "category": "C2_40_Research Assistant",
+      "date": "2025/11/01",
+      "twitter": null,
+      "linkedin": "https://www.linkedin.com/in/fang-sheng-877281357/",
+      "google_scholar": "https://scholar.google.ca/citations?user=tNWVXFQAAAAJ&hl=en",
+      "github": "https://github.com/F4NG66",
+      "website": null,
+      "orcid": "https://orcid.org/my-orcid?orcid=0009-0007-9779-5864",
+      "research_gate": null
+    }
+  }, {
     name: "gabriel_you",
     route: "/team/gabriel_you",
     frontMatter: {

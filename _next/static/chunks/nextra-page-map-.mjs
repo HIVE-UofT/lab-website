@@ -361,7 +361,7 @@ export const pageMap = [{
       "image": "/team/konrad.jpeg",
       "role": "PhD Student/Project Manager",
       "category": "C2_20_PhD Student",
-      "date": "2025/09/01",
+      "date": "2024/04/01",
       "twitter": null,
       "linkedin": "https://www.linkedin.com/in/konradsamsel/",
       "google_scholar": "https://scholar.google.com/citations?user=mLa26ioAAAAJ&hl=en",

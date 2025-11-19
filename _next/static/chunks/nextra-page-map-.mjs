@@ -219,7 +219,7 @@ export const pageMap = [{
       "keywords": "mental health, AI, NLP, generative AI, statistics, sexuality, health services",
       "image": "/team/chris_dharma.jpg",
       "role": "Postdoctoral fellow",
-      "category": "C2_10_Postdoctoral fellow",
+      "category": "C2_0_Postdoctoral fellow",
       "date": "2025/07/01",
       "github": "https://github.com/chrisdharma",
       "linkedin": "https://www.linkedin.com/in/christoffer-dharma-18143929/",

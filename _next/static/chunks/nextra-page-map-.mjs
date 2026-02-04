@@ -706,6 +706,23 @@ export const pageMap = [{
       "orcid": "https://orcid.org/signin"
     }
   }, {
+    name: "zhenxioa_yang",
+    route: "/team/zhenxioa_yang",
+    frontMatter: {
+      "title": "Zhenxiao Yang",
+      "image": "zhenxiao_yang.jpeg",
+      "role": "MSc Student, Health System Research ",
+      "category": "C2_30_MSc Student",
+      "date": "2025/01/01",
+      "twitter": null,
+      "linkedin": "https://www.linkedin.com/in/zhenxiaoyang/",
+      "google_scholar": "https://scholar.google.ca/citations?user=D-0H_vcAAAAJ&hl=en",
+      "github": null,
+      "website": null,
+      "orcid": "https://orcid.org/0009-0007-6716-691X",
+      "research_gate": null
+    }
+  }, {
     name: "ziqi_shu",
     route: "/team/ziqi_shu",
     frontMatter: {

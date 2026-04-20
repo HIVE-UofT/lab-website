@@ -300,6 +300,23 @@ export const pageMap = [{
       "research_gate": null
     }
   }, {
+    name: "guan_wang",
+    route: "/team/guan_wang",
+    frontMatter: {
+      "title": "Guan Wang",
+      "image": "/team/guan.jpeg",
+      "role": "PhD Student",
+      "category": "C2_6_PhD Student",
+      "date": "2026/05/01",
+      "twitter": null,
+      "linkedin": "https://www.linkedin.com/feed/",
+      "google_scholar": "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AEk_c1s2wyMrcMDYPteuFj1EyD3KWJzWCEKSqYwOsPjsbgDqJaX5QmPTqi83azFN0bSURRW_gIZI0gWzQCrAQQ&user=acPkKWAAAAAJ",
+      "github": "https://github.com/jhwgpwb?tab=overview&from=2026-04-01&to=2026-04-15",
+      "website": null,
+      "orcid": null,
+      "research_gate": null
+    }
+  }, {
     name: "hemn_khdr",
     route: "/team/hemn_khdr",
     frontMatter: {

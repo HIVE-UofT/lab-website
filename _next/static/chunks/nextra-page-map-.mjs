@@ -602,6 +602,23 @@ export const pageMap = [{
       "research_gate": null
     }
   }, {
+    name: "Sam Li",
+    route: "/team/Sam Li",
+    frontMatter: {
+      "title": "Sam Li",
+      "image": "/team/sam_li.jpg",
+      "role": "Research Assistant",
+      "category": "C2_40_Research Assistant",
+      "date": "2026/05/01",
+      "twitter": null,
+      "linkedin": "https://www.linkedin.com/in/sam-li07/",
+      "google_scholar": null,
+      "github": null,
+      "website": null,
+      "orcid": null,
+      "research_gate": null
+    }
+  }, {
     name: "sepehr_harfi",
     route: "/team/sepehr_harfi",
     frontMatter: {

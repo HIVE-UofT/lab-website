@@ -747,7 +747,7 @@ export const pageMap = [{
     frontMatter: {
       "title": "Zhenxiao Yang",
       "image": "/team/zhenxiao_yang.jpeg",
-      "role": "MSc Student, Health System Research ",
+      "role": "MSc Student",
       "category": "C2_30_MSc Student",
       "date": "2025/01/01",
       "twitter": null,

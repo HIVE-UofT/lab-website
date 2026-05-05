@@ -162,7 +162,7 @@ export const pageMap = [{
       "description": "AmirHossein Haji Mohammad Rezaei Bio",
       "author": "AmirHossein Haji Mohammad Rezaei",
       "keywords": "AmirHossein Haji Mohammad Rezaei",
-      "image": "/team/amirhossein_haji.jpeg",
+      "image": "/team/amirhossein_haji.jpg",
       "role": "MSc Student",
       "category": "C2_30_MSc Student",
       "date": "2025/05/27",

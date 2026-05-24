@@ -9,8 +9,8 @@ const LOGOS = [
     {image:`/funders/diabetes_canada.png`, size:"120px"},
     {image:`/funders/unicef.png`, size:"150px"},
     {image:`/funders/transform_HF.png`, size:"210px"},
-    {image:`/funders/nfrf.jpg`, size:"150px"},
-    {image:`/funders/sshrc.png`, size:"150px"},
+    {image:`/funders/nfrf.png`, size:"190px"},
+    {image:`/funders/sshrc.png`, size:"130px"},
 ];
 export default () => {
     return (

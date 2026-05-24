@@ -11,6 +11,7 @@ const LOGOS = [
     {image:`/funders/transform_HF.png`, size:"210px"},
     {image:`/funders/nfrf.png`, size:"190px"},
     {image:`/funders/sshrc.png`, size:"130px"},
+    {image:`/funders/ai4ph.jpg`, size:"130px"},
 ];
 export default () => {
     return (

@@ -345,7 +345,7 @@ export const pageMap = [{
       "title": "Javier Mencia Ledo",
       "image": "/team/javier.png",
       "role": "MSc Student",
-      "category": "C2_33_MSc Student",
+      "category": "C3_10_Alumni",
       "range": "PostHIVE: ",
       "current_position": "[AstraZeneca](https://www.astrazeneca.com/)",
       "date": "2026/05/01",

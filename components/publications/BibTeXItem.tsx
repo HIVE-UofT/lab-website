@@ -344,7 +344,7 @@ const BibTeXItem: React.FC<BibTeXItemProps> = ({ entry, citationStyle }) => {
     return (
         <div className="_flex _my-2">
             {/* <span className="_mr-2">[{entry.index}]</span> */}
-            <img src={`/publications/${entry.key}.png`} className='w-48 mr-4 hidden md:block'/>
+            <img src={`/publications/${entry.key}.png`} className='w-48 max-h-48 object-contain mr-4 hidden md:block'/>
             <div>
                 <p className="_mb-2">{renderReference()}</p>
                 {renderActions()}

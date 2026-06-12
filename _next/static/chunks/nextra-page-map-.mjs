@@ -136,6 +136,12 @@ export const pageMap = [{
   children: [{
     data: team_meta
   }, {
+    name: "Abdullah_Bukhari",
+    route: "/team/Abdullah_Bukhari",
+    frontMatter: {
+      "sidebarTitle": "Abdullah Bukhari"
+    }
+  }, {
     name: "amirhosein_rostami",
     route: "/team/amirhosein_rostami",
     frontMatter: {

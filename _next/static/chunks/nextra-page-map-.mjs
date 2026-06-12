@@ -139,7 +139,19 @@ export const pageMap = [{
     name: "Abdullah_Bukhari",
     route: "/team/Abdullah_Bukhari",
     frontMatter: {
-      "sidebarTitle": "Abdullah Bukhari"
+      "title": "Abdullah Wadie Bukhari",
+      "description": "AI Researcher and Intern at HIVE Lab, specialising in Clinical AI Safety, NLP, and Full-Stack Web Development.",
+      "author": "Abdullah Bukhari",
+      "keywords": "AI Safety, Clinical AI, Large Language Models, Natural Language Processing, Computer Vision, Full-Stack Development, Django, React",
+      "image": "/team/abdullah.jpeg",
+      "role": "Research Assistant",
+      "category": "C2_40_Research Assistant",
+      "date": "2026/06/01",
+      "twitter": "https://x.com/pyuqu99?s=21&t=ri3M-2R4vFASXg7E25P6cQ",
+      "github": "“https://github.com/lvbfront”",
+      "linkedin": "“https://www.linkedin.com/in/abdullah-bukhari-366074270/”",
+      "google_scholar": "“https://scholar.google.com/citations?hl=ar&user=ancgbAQAAAAJ”",
+      "orcid": "“https://orcid.org/0009-0008-6871-7629”"
     }
   }, {
     name: "amirhosein_rostami",

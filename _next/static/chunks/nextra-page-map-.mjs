@@ -471,6 +471,24 @@ export const pageMap = [{
       "orcid": "https://orcid.org/0009-0003-1000-5657"
     }
   }, {
+    name: "nasser_altamimi",
+    route: "/team/nasser_altamimi",
+    frontMatter: {
+      "title": "Nasser Altamimi",
+      "description": "Software Engineering student, Full-Stack Developer, and Research Assistant focused on AI safety, language models, and machine learning.",
+      "author": "Nasser Altamimi",
+      "keywords": "Artificial Intelligence, Machine Learning, Deep Learning, Natural Language Processing, Large Language Models, AI Safety, Software Engineering, Full-Stack Development",
+      "image": "/team/Nasser_altamimi.jpeg",
+      "role": "Research Assistant",
+      "category": "C2_XX_Interns",
+      "date": "2026/05/26",
+      "twitter": "",
+      "github": "https://github.com/NasserAltamimi",
+      "linkedin": "https://www.linkedin.com/in/nasser-altamimi-90a412372/",
+      "google_scholar": "",
+      "orcid": ""
+    }
+  }, {
     name: "neil_seeman",
     route: "/team/neil_seeman",
     frontMatter: {

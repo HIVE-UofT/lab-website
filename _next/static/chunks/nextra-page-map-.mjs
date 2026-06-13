@@ -756,7 +756,7 @@ export const pageMap = [{
     frontMatter: {
       "title": "Yacine Marouf",
       "image": "/team/yacine.png",
-      "role": "MSc Student",
+      "role": "Research Assistant",
       "category": "C2_40_Research Assistan",
       "date": "2026/05/01",
       "twitter": null,

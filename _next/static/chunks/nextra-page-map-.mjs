@@ -148,10 +148,10 @@ export const pageMap = [{
       "category": "C2_40_Research Assistant",
       "date": "2026/06/01",
       "twitter": "https://x.com/pyuqu99?s=21&t=ri3M-2R4vFASXg7E25P6cQ",
-      "github": "“https://github.com/lvbfront”",
-      "linkedin": "“https://www.linkedin.com/in/abdullah-bukhari-366074270/”",
-      "google_scholar": "“https://scholar.google.com/citations?hl=ar&user=ancgbAQAAAAJ”",
-      "orcid": "“https://orcid.org/0009-0008-6871-7629”"
+      "github": "https://github.com/lvbfront",
+      "linkedin": "https://www.linkedin.com/in/abdullah-bukhari-366074270/",
+      "google_scholar": "https://scholar.google.com/citations?hl=ar&user=ancgbAQAAAAJ",
+      "orcid": "https://orcid.org/0009-0008-6871-7629"
     }
   }, {
     name: "amirhosein_rostami",

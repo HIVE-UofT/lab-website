@@ -28,6 +28,18 @@ export const pageMap = [{
       "image": "/events/Beyond-the-Algorithm.jpg",
       "lang": "en"
     }
+  }, {
+    name: "e2026_Jul_ieee_EMBC",
+    route: "/events/e2026_Jul_ieee_EMBC",
+    frontMatter: {
+      "date": "2026/07/16",
+      "title": "HIVE Lab Research Presentations at IEEE EMBC 2026",
+      "description": "Five HIVE Lab papers will be presented at IEEE EMBC 2026 in Toronto from July 28 to 30.",
+      "status": "upcoming",
+      "type": "seminar",
+      "image": "/events/ieee-embc-2026.png",
+      "lang": "en"
+    }
   }]
 }, {
   name: "events",

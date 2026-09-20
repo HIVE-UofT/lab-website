@@ -377,7 +377,7 @@ export const pageMap = [{
     route: "/team/ivory_lin",
     frontMatter: {
       "title": "Ivory Lin",
-      "image": "/team/ivory_lin.jpg",
+      "image": "/team/Ivory_lin.jpg",
       "role": "Research Assistant",
       "category": "C2_40_Research Assistant",
       "date": "2026/09/01",

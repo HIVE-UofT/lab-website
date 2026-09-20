@@ -373,6 +373,23 @@ export const pageMap = [{
       "research_gate": null
     }
   }, {
+    name: "ivory_lin",
+    route: "/team/ivory_lin",
+    frontMatter: {
+      "title": "Ivory Lin",
+      "image": "/team/ivory_lin.jpg",
+      "role": "Research Assistant",
+      "category": "C2_40_Research Assistant",
+      "date": "2026/09/01",
+      "twitter": null,
+      "linkedin": "https://www.linkedin.com/in/ivory-l-086666360/",
+      "google_scholar": "https://scholar.google.com/citations?hl=en&user=jYiQ9VsAAAAJ&view_op=list_works&gmla=AKCpqFwVSSaQRmxjkOj9NeyWYbFIXj2etHhcBiwFH-21fW_a_qjQFN60HHzVzHbOPxrVOe-AhoXmCfMj5BIR9xh_",
+      "github": "https://github.com/lin6221881-oss",
+      "website": null,
+      "orcid": null,
+      "research_gate": null
+    }
+  }, {
     name: "javier_ledo",
     route: "/team/javier_ledo",
     frontMatter: {

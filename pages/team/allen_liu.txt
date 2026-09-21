@@ -1,11 +1,11 @@
 ---
 title: "Allen Liu"
-image: "/team/allen-liu.png"
+image: "/team/allen_liu.png"
 role: "Research Assistant"
 category: "C2_40_Research Assistant"
 date: 2026/09/18
 twitter:
-linkedin: "https://www.linkedin.com/in/allen-liu-971817438/"
+linkedin: https://www.linkedin.com/in/allen-liu-971817438/
 google_scholar:
 github:
 website:

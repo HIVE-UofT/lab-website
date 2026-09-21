@@ -321,7 +321,7 @@ export const pageMap = [{
     route: "/team/frank_vounasis",
     frontMatter: {
       "title": "Frank Vounasis",
-      "image": "/team/franks.jpeg",
+      "image": "/team/frank.jpeg",
       "role": "PhD Student",
       "category": "C2_4_PhD Student",
       "date": "2026/09/1",

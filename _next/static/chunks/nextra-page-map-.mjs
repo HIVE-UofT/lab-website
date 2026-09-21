@@ -196,7 +196,7 @@ export const pageMap = [{
       "keywords": "AmirHossein Haji Mohammad Rezaei",
       "image": "/team/amirhossein_haji.jpg",
       "role": "PhD Student",
-      "category": "C2_4_PhD Student",
+      "category": "C2_3_PhD Student",
       "date": "2026/09/01",
       "twitter": null,
       "github": "https://github.com/amir-haji",
@@ -314,6 +314,23 @@ export const pageMap = [{
       "github": "https://github.com/F4NG66",
       "website": null,
       "orcid": "https://orcid.org/my-orcid?orcid=0009-0007-9779-5864",
+      "research_gate": null
+    }
+  }, {
+    name: "frank_vounasis",
+    route: "/team/frank_vounasis",
+    frontMatter: {
+      "title": "Frank Vounasis",
+      "image": "/team/franks.jpeg",
+      "role": "PhD Student",
+      "category": "C2_4_PhD Student",
+      "date": "2026/09/1",
+      "twitter": null,
+      "linkedin": "https://www.linkedin.com/in/frankvounasis/",
+      "google_scholar": null,
+      "github": null,
+      "website": null,
+      "orcid": null,
       "research_gate": null
     }
   }, {

@@ -1,0 +1,16 @@
+---
+title: "Allen Liu"
+image: "/team/allen-liu.png"
+role: "Research Assistant"
+category: "C2_40_Research Assistant"
+date: 2026/09/18
+twitter:
+linkedin: "https://www.linkedin.com/in/allen-liu-971817438/"
+google_scholar:
+github:
+website:
+orcid:
+research_gate:
+---
+
+Allen recently completed his undergraduate studies in Biology and Immunology at the University of Toronto. His research interests lie at the intersection of multilingual artificial intelligence, health informatics, and misinformation detection. At HIVE Lab, he is exploring how language corpora can support the development and evaluation of reliable AI systems.

@@ -168,6 +168,23 @@ export const pageMap = [{
       "orcid": "https://orcid.org/0009-0008-6871-7629"
     }
   }, {
+    name: "allen_liu",
+    route: "/team/allen_liu",
+    frontMatter: {
+      "title": "Allen Liu",
+      "image": "/team/allen_liu.png",
+      "role": "Research Assistant",
+      "category": "C2_40_Research Assistant",
+      "date": "2026/09/18",
+      "twitter": null,
+      "linkedin": "https://www.linkedin.com/in/allen-liu-971817438/",
+      "google_scholar": null,
+      "github": null,
+      "website": null,
+      "orcid": null,
+      "research_gate": null
+    }
+  }, {
     name: "amirhosein_rostami",
     route: "/team/amirhosein_rostami",
     frontMatter: {

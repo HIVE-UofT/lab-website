@@ -224,6 +224,23 @@ export const pageMap = [{
       "research_gate": null
     }
   }, {
+    name: "aryaman",
+    route: "/team/aryaman",
+    frontMatter: {
+      "title": "Aryaman Bansal",
+      "image": "/team/aryaman.jpeg",
+      "role": "MSc Student",
+      "category": "C2_30_MSc Student",
+      "date": "2026/10/01",
+      "twitter": null,
+      "linkedin": "https://www.linkedin.com/in/aryaman1802/",
+      "google_scholar": "https://www.linkedin.com/in/aryaman1802/",
+      "github": "https://github.com/aryaman1802",
+      "website": "https://aryaman1802.github.io/about.html",
+      "orcid": null,
+      "research_gate": null
+    }
+  }, {
     name: "aseel_bahakim",
     route: "/team/aseel_bahakim",
     frontMatter: {

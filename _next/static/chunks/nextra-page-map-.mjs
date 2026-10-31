@@ -234,7 +234,7 @@ export const pageMap = [{
       "date": "2026/10/01",
       "twitter": null,
       "linkedin": "https://www.linkedin.com/in/aryaman1802/",
-      "google_scholar": "https://www.linkedin.com/in/aryaman1802/",
+      "google_scholar": "https://scholar.google.ca/citations?user=k35s5i8AAAAJ&hl=en",
       "github": "https://github.com/aryaman1802",
       "website": "https://aryaman1802.github.io/about.html",
       "orcid": null,
